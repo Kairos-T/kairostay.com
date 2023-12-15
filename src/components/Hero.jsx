@@ -5,7 +5,6 @@ import {init} from 'ityped';
 import React , { useEffect , useRef} from "react";
 import {AiOutlineGithub } from "react-icons/ai";
 import {ImLinkedin} from "react-icons/im";
-import {AiOutlineInstagram} from "react-icons/ai";
 import {BiLinkAlt} from "react-icons/bi";
 import {aarti} from "../assets";
 import "./Hero.scss";
@@ -32,7 +31,7 @@ const Hero = () => {
 
         <div className="head2">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hii there, I'm <p className='name text-[#915EFF]'>Aarti Rathi</p>
+            Hii there, I'm <p className='name text-[#915EFF]'>Kairos Tay</p>
           </h1>
           <h3>
             <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient`}></span>
@@ -47,10 +46,7 @@ const Hero = () => {
           href="https://www.linkedin.com/in/aarti-rathi-a6031814b/" target="_blank">
           <ImLinkedin />
         </a>
-        <a
-          href="https://www.instagram.com/aarti.rathiii" target="_blank">
-          <AiOutlineInstagram />
-        </a>
+
         <a
           href="https://linktr.ee/rathi17" target="_blank">
           <BiLinkAlt />
