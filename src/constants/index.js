@@ -5,7 +5,7 @@ import {
     crypto,oop,yml,crud,dwld,onetomany,
     trie,ds,cg,
     port_3d, jsp, chitchat, notes, react1,
-    be,sql, mini, snl,
+    be,sql, mini, snl,  
   } from "../assets";
 
   const profiles = [
@@ -61,6 +61,9 @@ import {
   
   const technologies = [
     {
+      name: "Python",
+      icon: "https://img.icons8.com/color/480/000000/python.png",
+    },{
       name: "HTML 5",
       icon: html,
     },
@@ -91,10 +94,6 @@ import {
     {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
     },
     {
       name: "MongoDB",
