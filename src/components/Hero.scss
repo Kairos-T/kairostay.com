@@ -58,32 +58,36 @@
 }
 
 
-.imgcontainer1
-{
-    right: 4rem;
-    top: 6rem;
-    width: 300px;
-    height: 300px;
-    border-radius: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .imgcontainer1
+// {
+//     right: 4rem;
+//     top: 6rem;
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 40%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    @include mobile3
-    {
-        width: 200px;
-        height: 200px;
-        right: 5px;
-    }
+//     @include mobile3
+//     {
+//         width: 200px;
+//         height: 200px;
+//         right: 5px;
+//     }
 
-    @include mobile2
-    {
-        display: none;
-    }
+//     @include mobile2
+//     {
+//         display: none;
+//     }
 
-    img
-    {
-        height: 90%;
-        border-radius: 45%;
-    }
-}
+//     img
+//     {
+//         height: 90%;
+//         border-radius: 45%;
+//     }
+// }
+
+.heroHeadText {
+    font-family: 'consolas' !important;
+  }
