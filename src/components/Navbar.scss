@@ -9,6 +9,6 @@
 }
 
 .translucent {
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px); // Adjust the pixel value to control the amount of blur
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
   }
