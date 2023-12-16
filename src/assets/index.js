@@ -1,4 +1,3 @@
-import logo from "./arr.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -40,7 +39,6 @@ import stem from "./project/stem.jpg";
 import resume from "./files/resume/Resume.pdf"
 
 export {
-  logo,
   backend,
   creator,
   mobile,
