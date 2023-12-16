@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import Tech from './Tech';
 import Experience from './Experience';
 import Project from './Project';
-import Contact from './Contact';
 import Content from './Content';
 import Profile from './Profile';
 import Achievement from './Achievement';
@@ -19,7 +18,6 @@ export {
   Experience,
   Project,
   Education,
-  Contact,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
