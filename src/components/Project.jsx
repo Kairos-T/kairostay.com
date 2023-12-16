@@ -2,7 +2,6 @@ import Tilt from "react-parallax-tilt";
 import { motion, transform } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
-import { github } from "../assets";
 import { demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { list } from "../constants";
@@ -22,7 +21,6 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
   source_link,
 }) => {
   return (

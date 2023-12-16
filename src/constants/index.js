@@ -124,7 +124,7 @@ const list = [
   },
   {
     id: "prg",
-    title: "Programming",
+    title: "Python",
   },
   {
     id: "web",
@@ -212,7 +212,7 @@ export const eventProject = [
       },
     ],
     image: sentinel,
-    source_link: "src/assets/files/events/SentinelCertificate.png",
+    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/events/SentinelCertificate.png",
   },
 ];
 
