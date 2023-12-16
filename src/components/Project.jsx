@@ -29,7 +29,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='project-box bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full'
+        className='project-box bg-additional p-5 rounded-2xl sm:w-[330px] w-full'
       >
         <div className='Box1 relative w-full h-[180px]'>
           <img
@@ -39,7 +39,7 @@ const ProjectCard = ({
           />
 
         <div className='absolute inset-0 flex justify-center card-img_hover' style={{alignItems: "center",}}>
-          <h3 className='text-black font-bold text-[16px]'>{name}</h3>
+          <h3 className=' font-bold text-[16px]'>{name}</h3>
           </div>
 
           <div className='title absolute inset-0 flex justify-end card-img_hover'>
@@ -114,8 +114,8 @@ const Project = () => {
   return (
     <>
       <motion.div whileInView={{ opacity: 1 , transform : 'none'}} variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} sectionHeadText text-center` }>root@kairos:~#</p>
+        <h2 className={`${styles.sectionHeadText} sectionHeadText text-center`}>./Events && ./Projects</h2>
       </motion.div>
 
       <div className='project w-full flex'>
