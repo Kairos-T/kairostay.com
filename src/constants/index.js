@@ -171,7 +171,7 @@ export const eventProject = [
       },
     ],
     image: dsta,
-    source_link: "https://github.com/shinchancode/Snake-Yaml-Project",
+    source_link: "https://www.linkedin.com/posts/kairoshestiatay_i-remember-jumping-for-joy-a-few-weeks-ago-activity-7125109433042403328-M4m6?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Down Under CTF",
@@ -192,7 +192,7 @@ export const eventProject = [
       },
     ],
     image: ductf,
-    source_link: "https://github.com/shinchancode/CRUD-Operation",
+    source_link: "https://404unfound.com/ctfs/ductf23/",
   },
   {
     name: "Sentinel Programme - CTI",
@@ -447,7 +447,7 @@ const experiences = [
       "A*STAR's Scientist-in-Schools Programme 2021-2022",
       "Math Talent Development Programme 2022",
     ],
-    // link: "https://www.cloudskillsboost.google/public_profiles/48dcd029-03b4-437b-9dd3-ef7d65958eb0",
+    // link: "https:",
   },
 ];
 
