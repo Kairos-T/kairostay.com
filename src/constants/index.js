@@ -8,8 +8,6 @@ import {
   mongodb,
   git,
   threejs,
-  hf,
-  holopin,
   school,
   np,
   scs,

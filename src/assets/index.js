@@ -17,8 +17,6 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 
-import holopin from "./holopin.png";
-import hf from "./hf.svg";
 import school from "./school.png";
 import np from "./np.png";
 
@@ -37,7 +35,7 @@ import malware from "./project/malware.png";
 import blog from "./project/blog.png";
 import portfolio from "./project/port.png";
 import rportfolio from "./project/portfolio.png";
-import freelance from "./project/freelance.png"
+import freelance from "./project/freelance.png";
 
 import smp from "./project/smp.png";
 import stem from "./project/stem.jpg";
@@ -62,8 +60,6 @@ export {
   reactjs,
   tailwind,
   threejs,
-  hf,
-  holopin,
   demo,
   school,
   onetomany,
