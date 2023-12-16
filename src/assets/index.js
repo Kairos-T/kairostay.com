@@ -1,5 +1,4 @@
 import logo from "./arr.svg";
-import aarti from "./photo2.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,10 +19,10 @@ import threejs from "./tech/threejs.svg";
 
 import holopin from "./holopin.png";
 import hf from "./hf.svg";
-import bny from "./bny.png";
-import clg from "./clg.png";
 import school from "./school.png";
 import np from "./np.png";
+
+import scs from "./scs.png"
 
 import crypto from "./project/crypto.jpg";
 import oop from "./project/oop.png";
@@ -47,6 +46,7 @@ import sql from "./project/sql.jpg";
 import mini from "./project/library.png";
 import snl from "./project/snl.jpeg";
 
+
 export {
   logo,
   backend,
@@ -65,12 +65,9 @@ export {
   threejs,
   hf,
   holopin,
-  bny,
   demo,
-  clg,
   school,
   crypto,
-  aarti,
   oop,
   crud,
   dwld,
@@ -89,4 +86,5 @@ export {
   mini,
   snl,
   np,
+  scs,
 };
