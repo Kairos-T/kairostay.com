@@ -24,25 +24,6 @@ import {
   autopsy,
 } from "../assets";
 
-const profiles = [
-  {
-    link: "https://github.com/kairos-t",
-    icon: github,
-  },
-  {
-    link: "https://www.linkedin.com/in/kairoshestiatay/",
-    icon: 'https://img.icons8.com/ios-filled/FFFFFF/linkedin.png',
-  },
-  {
-    link: "mailto:contact@kairostay.com",
-    icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
-  },
-  {
-    link: "https://t.me/kairostay",
-    icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
-  }
-];
-
 const awards = [
   {
     title: "DSTA Polytechnic Digital Scholarship",
@@ -108,12 +89,12 @@ const technologies = [
     icon: "https://img.icons8.com/color/240/bash.png",
   },
   {
-    name:"Kali Linux Tools",
-    icon:"https://img.icons8.com/plasticine/200/kali-linux.png", 
+    name: "Kali Linux Tools",
+    icon: "https://img.icons8.com/plasticine/200/kali-linux.png",
   },
   {
-    name:"Autopsy",
-    icon: autopsy, 
+    name: "Autopsy",
+    icon: autopsy,
   },
 ];
 
@@ -170,7 +151,8 @@ export const eventProject = [
       },
     ],
     image: dsta,
-    source_link: "https://www.linkedin.com/posts/kairoshestiatay_i-remember-jumping-for-joy-a-few-weeks-ago-activity-7125109433042403328-M4m6?utm_source=share&utm_medium=member_desktop",
+    source_link:
+      "https://www.linkedin.com/posts/kairoshestiatay_i-remember-jumping-for-joy-a-few-weeks-ago-activity-7125109433042403328-M4m6?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Down Under CTF",
@@ -212,7 +194,8 @@ export const eventProject = [
       },
     ],
     image: sentinel,
-    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/events/SentinelCertificate.png",
+    source_link:
+      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/events/SentinelCertificate.png",
   },
 ];
 
@@ -369,7 +352,8 @@ export const researchProject = [
       },
     ],
     image: stem,
-    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/Capstone%20Research%20Paper.pdf",
+    source_link:
+      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/Capstone%20Research%20Paper.pdf",
   },
   {
     name: "Science Mentorship Programme",
@@ -386,7 +370,8 @@ export const researchProject = [
       },
     ],
     image: smp,
-    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/21CWSS02%20Research%20Paper.pdf",
+    source_link:
+      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/21CWSS02%20Research%20Paper.pdf",
   },
 ];
 
@@ -468,12 +453,31 @@ const educations = [
   },
 ];
 
+const profiles = [
+  {
+    link: "https://github.com/kairos-t",
+    icon: github,
+  },
+  {
+    link: "https://www.linkedin.com/in/kairoshestiatay/",
+    icon: "https://img.icons8.com/ios-filled/FFFFFF/linkedin.png",
+  },
+  {
+    link: "mailto:contact@kairostay.com",
+    icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
+  },
+  {
+    link: "https://t.me/kairostay",
+    icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
+  },
+];
+
 export {
   list,
-  profiles,
   technologies,
   experiences,
   educations,
   awards,
   achievements,
+  profiles,
 };
