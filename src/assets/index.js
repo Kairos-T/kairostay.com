@@ -22,30 +22,29 @@ import hf from "./hf.svg";
 import school from "./school.png";
 import np from "./np.png";
 
-import scs from "./scs.png"
+import scs from "./scs.png";
 
-import crypto from "./project/crypto.jpg";
-import oop from "./project/oop.png";
-import crud from "./project/crud.jpg";
-import dwld from "./project/dwld.jpg";
+import aisp from "./project/aisp.png";
+import dsta from "./project/dsta.jpg";
+
+import ductf from "./project/ductf.png";
+import sentinel from "./project/sentinel.png";
+
+import bb84 from "./project/bb84.png";
+import nltk from "./project/nltk.png";
+import malware from "./project/malware.png";
+
+import blog from "./project/blog.png";
+import portfolio from "./project/port.png";
+import rportfolio from "./project/portfolio.png";
+import freelance from "./project/freelance.png"
+
+import smp from "./project/smp.png";
+import stem from "./project/stem.jpg";
+
 import onetomany from "./project/onetomany.jpg";
-import yml from "./project/yml.png";
-
-import trie from "./project/trie.jpg";
-import ds from "./project/ds.jpg";
-import cg from "./project/cg.jpg";
-
-import port_3d from "./project/react.png";
-import jsp from "./project/jsp.png";
-import notes from "./project/notes.png";
-import chitchat from "./project/chitChat.png";
-import react1 from "./project/react1.png";
 
 import be from "./project/mcq.avif";
-import sql from "./project/sql.jpg";
-import mini from "./project/library.png";
-import snl from "./project/snl.jpeg";
-
 
 export {
   logo,
@@ -67,24 +66,21 @@ export {
   holopin,
   demo,
   school,
-  crypto,
-  oop,
-  crud,
-  dwld,
   onetomany,
-  yml,
-  trie,
-  ds,
-  cg,
-  port_3d,
-  jsp,
-  chitchat,
-  notes,
-  react1,
   be,
-  sql,
-  mini,
-  snl,
   np,
   scs,
+  aisp,
+  dsta,
+  ductf,
+  sentinel,
+  bb84,
+  blog,
+  portfolio,
+  nltk,
+  malware,
+  smp,
+  stem,
+  rportfolio,
+  freelance,
 };
