@@ -1,3 +1,4 @@
+import { BsLinkedin } from "react-icons/bs";
 import {
   javascript,
   html,
@@ -10,7 +11,6 @@ import {
   hf,
   holopin,
   school,
-  be,
   np,
   scs,
   aisp,
@@ -26,60 +26,52 @@ import {
   stem,
   rportfolio,
   freelance,
+  github,
 } from "../assets";
 
 const profiles = [
   {
-    link: "https://auth.geeksforgeeks.org/user/aarti_rathi",
-    icon: "https://img.icons8.com/color/344/GeeksforGeeks.png",
+    link: "https://github.com/kairos-t",
+    icon: github,
   },
   {
-    link: "https://www.coursera.org/account/accomplishments/specialization/7V2SFZ9YWWRL",
-    icon: "https://img.icons8.com/fluency/344/google-cloud.png",
+    link: "https://www.linkedin.com/in/kairoshestiatay/",
+    icon: 'https://img.icons8.com/ios-filled/FFFFFF/linkedin.png',
   },
   {
-    link: "https://www.qwiklabs.com/public_profiles/48dcd029-03b4-437b-9dd3-ef7d65958eb0",
-    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-qwiklabs-provides-real-cloud-environments-that-help-developers-logo-color-tal-revivo.png",
+    link: "mailto:contact@kairostay.com",
+    icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
   },
   {
-    link: "https://www.hackerrank.com/_shinchancode",
-    icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/344/external-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-logo-color-tal-revivo.png",
+    link: "https://t.me/kairostay",
+    icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
+  }
+];
+
+const awards = [
+  {
+    title: "DSTA Polytechnic Digital Scholarship",
   },
   {
-    link: "https://dev.to/shinchancode",
-    icon: hf,
+    title: "AiSP SVRP Bronze Award 2023",
   },
   {
-    link: "https://www.holopin.io/@shinchancode#badges",
-    icon: holopin,
+    title: "EAGLES Award 2022",
   },
 ];
 
 const achievements = [
   {
-    title:
-      "8th Position : Selected for the final round of 12th CSI InApp International Student Project awards 2023.",
+    title: "Linux Essentials - Cisco",
   },
   {
-    title: "Twice State level Table-Tennis Winner (2021 and 2022)",
+    title: "Networking Essentials - Cisco:",
   },
   {
-    title:
-      "1st Position : Consecutive four times Winner of UdChalo Scholarship (2019 - 2023)",
+    title: "Cybersecurity Essentials - Cisco:",
   },
   {
-    title: "Branch Head of Information Technology Department (2021 - 2022)",
-  },
-  {
-    title:
-      "Selected in top 100 candidates for Google Cloud Training among 20k Students.",
-  },
-  {
-    title:
-      "Got Education Scholarship Scheme for Army Personnel(ESSA) Scholarship (2015 - 2023)",
-  },
-  {
-    title: "Played Nationals in Throwball for U-14 category. (2015)",
+    title: "Literacy in AI - AI Singapore:",
   },
 ];
 
@@ -490,4 +482,12 @@ const educations = [
   },
 ];
 
-export { list, profiles, technologies, experiences, educations, achievements };
+export {
+  list,
+  profiles,
+  technologies,
+  experiences,
+  educations,
+  awards,
+  achievements,
+};
