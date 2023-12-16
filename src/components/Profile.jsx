@@ -13,7 +13,7 @@ import "./Profile.scss";
 const Profile = () => {
   return (
     <>
-      <motion.div id="tech" variants={textVariant()}>
+      <motion.div id="contact" variants={textVariant()}>
         <p className={`${styles.sectionSubText} sectionHeadText text-center`}>
           root@kairos:~#
         </p>
