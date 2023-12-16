@@ -1,71 +1,58 @@
 $maincolor: rgb(3, 3, 37);
 
-.project
-{
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-box {
+    height: 500px;
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
-    .project-box
-    {
-        height: 500px;
+    li {
+      border: solid 2px #00e9ff;
+      border-radius: 10px;
     }
-
-    ul
-    {
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;  
-
-        li
-        {
-            border: solid 2px #00e9ff;
-            border-radius: 10px;
-        }     
+  }
+  .Box1 {
+    cursor: pointer;
+    .image {
+      z-index: 1;
     }
-    .Box1
-    {
-        cursor: pointer;
-        .image
-        {
-            z-index: 1;
-        }
-        h3, .title
-        {
-            opacity: 0;
-        }
-        &:hover
-        {
-            background-color: $maincolor;
-            .image
-            {
-                opacity: 0.2;
-                z-index: 0;
-            }
-            h3
-            {
-                opacity: 1;
-                z-index: 1;
-                color: rgb(255, 255, 255);
-            }
-            .title
-            {
-                opacity: 1;
-                z-index: 1;
-            }
-
-        }
+    h3,
+    .title {
+      opacity: 0;
     }
-
-    .box
-    {
-            gap: 1.75rem;
+    &:hover {
+      background-color: $maincolor;
+      .image {
+        opacity: 0.2;
+        z-index: 0;
+      }
+      h3 {
+        opacity: 1;
+        z-index: 1;
+        color: rgb(255, 255, 255);
+      }
+      .title {
+        opacity: 1;
+        z-index: 1;
+      }
     }
+  }
+
+  .box {
+    gap: 1.75rem;
+  }
 }
 
 .sectionHeadText {
-    font-family: "consolas" !important;
-  }
-  
+  font-family: "consolas" !important;
+}
