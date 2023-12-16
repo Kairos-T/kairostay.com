@@ -28,5 +28,11 @@ npm run dev
 4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the results!
 
 ## Features
+To be Updated :)
 
 ## References
+- [Unix Terminal Look](https://reactportfoliotemplate.paytonpierce.dev/about)
+- [Parallax Effects](https://react-spring-parallax.netlify.app/)
+- [3D Effects, Elements](https://github.com/ladunjexa/reactjs18-3d-portfolio)
+- [Sticky NavBar](https://github.com/shinchancode/3d-react-portfolio)
+- [Scrolling Parallax](https://github.com/TomIsLoading/framer-parallax)
