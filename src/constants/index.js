@@ -154,7 +154,6 @@ export const eventProject = [
     image: aisp,
     source_link:
       "https://www.facebook.com/media/set/?set=a.726877879476044&type=3",
-    source_code_link: "https://github.com/shinchancode/Cryptography",
   },
   {
     name: "DSTA Award Ceremony",
@@ -370,7 +369,7 @@ export const researchProject = [
       },
     ],
     image: stem,
-    source_link: "src/assets/files/research/Capstone Research Paper.pdf",
+    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/Capstone%20Research%20Paper.pdf",
   },
   {
     name: "Science Mentorship Programme",
@@ -387,7 +386,7 @@ export const researchProject = [
       },
     ],
     image: smp,
-    source_link: "src/assets/files/research/21CWSS02 Research Paper.pdf",
+    source_link: "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/21CWSS02%20Research%20Paper.pdf",
   },
 ];
 
