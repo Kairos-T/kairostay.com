@@ -11,17 +11,20 @@ const Tech = () => {
   return (
     <>
       <motion.div id="tech" variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Tools
+        <p className={`${styles.sectionSubText} sectionHeadText text-center`}>
+          root@kairos:~#
+        </p>
+        <h2 className={`${styles.sectionHeadText} sectionHeadText text-center`}>
+          ./skills
         </h2>
       </motion.div>
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div style={{height: '5rem', width: "5rem"}} key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
+      <div className="flex flex-row flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div style={{ height: "5rem", width: "5rem" }} key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
     </>
   );
 };

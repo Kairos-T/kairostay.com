@@ -7,15 +7,12 @@ import web from "./web.png";
 import github from "./github.png";
 import demo from "./demo.png";
 
+import autopsy from "./tech/autopsy.svg"
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
 
 import school from "./school.png";
 import np from "./np.png";
@@ -40,10 +37,6 @@ import freelance from "./project/freelance.png";
 import smp from "./project/smp.png";
 import stem from "./project/stem.jpg";
 
-import onetomany from "./project/onetomany.jpg";
-
-import be from "./project/mcq.avif";
-
 export {
   logo,
   backend,
@@ -55,15 +48,9 @@ export {
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
-  tailwind,
-  threejs,
   demo,
   school,
-  onetomany,
-  be,
   np,
   scs,
   aisp,
@@ -79,4 +66,5 @@ export {
   stem,
   rportfolio,
   freelance,
+  autopsy,
 };

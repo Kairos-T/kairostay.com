@@ -1,13 +1,9 @@
-import { BsLinkedin } from "react-icons/bs";
 import {
   javascript,
   html,
   css,
   reactjs,
-  tailwind,
-  mongodb,
   git,
-  threejs,
   school,
   np,
   scs,
@@ -25,6 +21,7 @@ import {
   rportfolio,
   freelance,
   github,
+  autopsy,
 } from "../assets";
 
 const profiles = [
@@ -79,6 +76,10 @@ const technologies = [
     icon: "https://img.icons8.com/color/480/000000/python.png",
   },
   {
+    name: "C#",
+    icon: "https://img.icons8.com/color/240/c-sharp-logo.png",
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -95,36 +96,24 @@ const technologies = [
     icon: "https://img.icons8.com/color/480/000000/bootstrap.png",
   },
   {
-    name: "Google Cloud",
-    icon: "https://img.icons8.com/color/480/000000/google-cloud.png",
-  },
-  {
-    name: "C++ tool",
-    icon: "https://img.icons8.com/color/480/000000/c-plus-plus-logo.png",
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "MySql",
-    icon: "https://img.icons8.com/color/480/000000/mysql-logo.png",
+    name: "bash",
+    icon: "https://img.icons8.com/color/240/bash.png",
+  },
+  {
+    name:"Kali Linux Tools",
+    icon:"https://img.icons8.com/plasticine/200/kali-linux.png", 
+  },
+  {
+    name:"Autopsy",
+    icon: autopsy, 
   },
 ];
 
