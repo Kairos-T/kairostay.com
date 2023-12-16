@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { logo } from "../assets";
+import { resume } from "../assets";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -52,10 +52,11 @@ const Navbar = () => {
             className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer`}
           >
             <a
-              href="https://drive.google.com/drive/folders/13YGuvdkXQdyFzfuJd3YdUaG99dhCPz22?pli=1"
+              href={resume}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Resume
+              &gt; Resume
             </a>
           </div>
         </div>

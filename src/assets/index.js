@@ -37,6 +37,8 @@ import freelance from "./project/freelance.png";
 import smp from "./project/smp.png";
 import stem from "./project/stem.jpg";
 
+import resume from "./files/resume/Resume.pdf"
+
 export {
   logo,
   backend,
@@ -67,4 +69,5 @@ export {
   rportfolio,
   freelance,
   autopsy,
+  resume
 };
