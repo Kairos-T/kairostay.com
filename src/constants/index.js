@@ -213,7 +213,7 @@ export const eventProject = [
       },
     ],
     image: sentinel,
-    source_link: "",
+    source_link: "src/assets/files/events/SentinelCertificate.png",
   },
 ];
 
@@ -370,7 +370,7 @@ export const researchProject = [
       },
     ],
     image: stem,
-    source_link: "",
+    source_link: "src/assets/files/research/Capstone Research Paper.pdf",
   },
   {
     name: "Science Mentorship Programme",
@@ -387,7 +387,7 @@ export const researchProject = [
       },
     ],
     image: smp,
-    source_link: "",
+    source_link: "src/assets/files/research/21CWSS02 Research Paper.pdf",
   },
 ];
 
