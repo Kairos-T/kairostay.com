@@ -10,26 +10,22 @@ import {
   hf,
   holopin,
   school,
-  crypto,
-  oop,
-  yml,
-  crud,
-  dwld,
-  onetomany,
-  trie,
-  ds,
-  cg,
-  port_3d,
-  jsp,
-  chitchat,
-  notes,
-  react1,
   be,
-  sql,
-  mini,
-  snl,
   np,
   scs,
+  aisp,
+  dsta,
+  ductf,
+  sentinel,
+  bb84,
+  blog,
+  portfolio,
+  nltk,
+  malware,
+  smp,
+  stem,
+  rportfolio,
+  freelance,
 } from "../assets";
 
 const profiles = [
@@ -144,438 +140,275 @@ const technologies = [
 
 const list = [
   {
-    id: "java",
-    title: "Java",
+    id: "event",
+    title: "Events",
   },
   {
-    id: "c++",
-    title: "C++",
+    id: "prg",
+    title: "Programming",
   },
   {
     id: "web",
     title: "Web Dev",
   },
   {
-    id: "other",
-    title: "Other",
+    id: "research",
+    title: "Research",
   },
 ];
 
-export const javaProject = [
+export const eventProject = [
   {
-    name: "Cryptography",
+    name: "AiSP SVRP",
     description:
-      "The project is based on a cryptography technique that uses Double layer encryption and decryption using Armstrong numbers and RGB color-based mappings for various types of file format. The idea is inspired from a research paper.",
+      "I am rather proud to have received the AiSP SVRP Bronze Award for my contributions throughout my first semester in NP. I hope to continue to contribute to the cybersecurity landscape!",
     tags: [
       {
-        name: "cryptography",
+        name: "AiSP",
         color: "blue-text-gradient",
       },
       {
-        name: "security",
+        name: "Cybersecurity",
         color: "green-text-gradient",
       },
-      {
-        name: "java",
-        color: "pink-text-gradient",
-      },
     ],
-    image: crypto,
-    source_link: "https://github.com/shinchancode/Cryptography",
+    image: aisp,
+    source_link:
+      "https://www.facebook.com/media/set/?set=a.726877879476044&type=3",
     source_code_link: "https://github.com/shinchancode/Cryptography",
   },
   {
-    name: "Snake Yaml",
+    name: "DSTA Award Ceremony",
     description:
-      "Created a simple Maven project, a YAML file and write student data in it. As the request is made, crud should be performed in real time . (Hint: Used SnakeYAML library and add dependency in pom)",
+      "Really honoured to have received the DSTA Scholarship after my first semester. Getting this felt like a big confidence boost for my constant efforts in growing my skills in cybersecurity, and I am stoked to continue honing my skills!",
     tags: [
       {
-        name: "yaml",
+        name: "DSTA",
         color: "blue-text-gradient",
       },
       {
-        name: "springboot",
+        name: "Cybersecurity",
         color: "green-text-gradient",
       },
-      {
-        name: "postman",
-        color: "pink-text-gradient",
-      },
     ],
-    image: yml,
+    image: dsta,
     source_link: "https://github.com/shinchancode/Snake-Yaml-Project",
-    source_code_link: "https://github.com/shinchancode/Snake-Yaml-Project",
   },
   {
-    name: "CRUD operations",
+    name: "Down Under CTF",
     description:
-      "Built a java based application to allow user to create, read, update and delete Entities. Spring Boot provides an interface called CrudRepository that contains methods for CRUD operations.",
+      "This was a two-day CTF that I participated with one of my friends. I managed to explore GSMA's Location API, which allowed me to 'track' a target's location using their phone number, which was really intriguing.",
     tags: [
       {
-        name: "java",
+        name: "Cybersecurity",
         color: "blue-text-gradient",
       },
       {
-        name: "springboot",
+        name: "CTF",
         color: "green-text-gradient",
       },
       {
-        name: "crud",
+        name: "OSINT",
         color: "pink-text-gradient",
       },
     ],
-    image: crud,
+    image: ductf,
     source_link: "https://github.com/shinchancode/CRUD-Operation",
-    source_code_link: "https://github.com/shinchancode/CRUD-Operation",
   },
   {
-    name: "Byte-Array-to-File",
+    name: "Sentinel Programme - CTI",
     description:
-      "Built a java project where we input a file using byte array, store it on local system. In order to convert a byte array to a file, we will be using a method named the getBytes() method of String class.",
+      "Grateful to have been selected by MINDEF for this programme. It provided valuable insights into threat intel using Splunk, and threat hunting using Snort and Yara. I analysed a malware sample and its traffic on a Windows system! :D",
     tags: [
       {
-        name: "java",
+        name: "Cybersecurity",
         color: "blue-text-gradient",
       },
       {
-        name: "byteArray",
+        name: "Cyber Threat Intel",
         color: "green-text-gradient",
       },
       {
-        name: "file",
+        name: "Threat Hunting",
         color: "pink-text-gradient",
       },
     ],
-    image: dwld,
-    source_link: "https://github.com/shinchancode/byte-array-to-file",
-    source_code_link: "https://github.com/shinchancode/byte-array-to-file",
-  },
-  {
-    name: "Spring Boot One To Many",
-    description:
-      "Implemented Spring Boot One-To-Many mapping with Hibernate in a Spring Boot CRUD using @OnetoMany annotation. Mapping between two entities and used a MySQL database to store and retrieve the data.",
-    tags: [
-      {
-        name: "onetomany",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "springbott",
-        color: "green-text-gradient",
-      },
-      {
-        name: "crud",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: onetomany,
-    source_link: "https://github.com/shinchancode/oneTomany-springboot",
-    source_code_link: "https://github.com/shinchancode/oneTomany-springboot",
-  },
-  {
-    name: "OOP Lab",
-    description:
-      "These projects contain object oriented programming primary concepts and its code in Java language. Topics like : Inheritence, Constructor, Virtual function, Interface, Exception Handling, Generic Programming and File Handling etc.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "oop",
-        color: "green-text-gradient",
-      },
-      {
-        name: "coding",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: oop,
-    source_link:
-      "https://github.com/shinchancode/Object-Oriented-Programming-Lab",
-    source_code_link:
-      "https://github.com/shinchancode/Object-Oriented-Programming-Lab",
+    image: sentinel,
+    source_link: "",
   },
 ];
 
-export const cProject = [
+export const prgProject = [
   {
-    name: "Spell Checker",
+    name: "BB84",
     description:
-      "Trie data structure implementation used as a dictionary, where customer details are checked, searched, inserted and removed. Using Trie, search complexities can be brought to optimal limit (key length)",
+      "BB84 QKD Simulator using Qiskit to simulate various environments like perfect implementations, low and high error rates, and the presence of an eavesdropper. This allows us to analyse the effects of these scenarios. ",
     tags: [
       {
-        name: "C++",
+        name: "Quantum",
         color: "blue-text-gradient",
       },
       {
-        name: "trie",
+        name: "Cryptography",
         color: "green-text-gradient",
       },
       {
-        name: "dictionary",
+        name: "Cybersecurity",
         color: "pink-text-gradient",
       },
     ],
-    image: trie,
-    source_link: "https://github.com/shinchancode/Trie-Data-structure",
-    source_code_link: "https://github.com/shinchancode/Trie-Data-structure",
+    image: bb84,
+    source_link: "https://github.com/Kairos-T/bb84-simulation",
   },
   {
-    name: "DSA Lab",
+    name: "NLTK Sentiment Analyser",
     description:
-      "These projects contain data structure and algorithms primary concepts and its code in C++ language. Topics like : Linked List, Stack, Queue, Circular Queue, Binary Tree, Binary Search Tree, Expression Tree, Threaded Binary Tree, and Heap Sort etc.",
+      "Script to analyse sentiment in text data, using the VADER (NLTK) model to evaluate how positive, neutral, and negative the text is. Then, it outputs the scores and overall labels to a CSV file.",
     tags: [
       {
-        name: "DSA",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "C++",
+        name: "NLP",
         color: "green-text-gradient",
       },
-      {
-        name: "semester",
-        color: "pink-text-gradient",
-      },
     ],
-    image: ds,
-    source_link: "https://github.com/shinchancode/Data-Structure-Algorithms",
-    source_code_link:
-      "https://github.com/shinchancode/Data-Structure-Algorithms/",
+    image: nltk,
+    source_link: "https://github.com/Kairos-T/NLTK-Sentiment-Analyser",
   },
   {
-    name: "Computer Graphics Lab",
+    name: "Malware Scanner",
     description:
-      "These projects contain computer graphics topics like : Line Drawing Algorithm (DDA and Bresenham), Bresenham circle drawing, Polygon filling, 2D transformation, Cohen Sutherland polygon clipping and Bezier curve.",
+      "Script that leverages pyClamd and ClamAV daemon to scan files for potential malware, and generates a log detailing if files are clean or contain malware (along with details of it).",
     tags: [
       {
-        name: "computergraphics",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "C++",
+        name: "Malware",
         color: "green-text-gradient",
       },
       {
-        name: "semester",
+        name: "ClamAV",
         color: "pink-text-gradient",
       },
     ],
-    image: cg,
-    source_link: "https://github.com/shinchancode/Computer-Graphics",
-    source_code_link: "https://github.com/shinchancode/Computer-Graphics",
+    image: malware,
+    source_link: "https://github.com/Kairos-T/Basic-Malware-Checker",
   },
 ];
 
 export const webProject = [
   {
-    name: "3D React Portfolio",
+    name: "Portfolio",
     description:
-      "Created an impressive website made using React with 3D graphics and animations to bring their content to life. Responsive webpage is made with user friendly interface",
+      "A revamp of my old portfolio! This is built with React for amazing code reusability. It was inspired by several other React apps and my blog's landing page. This uses Parallax, iType, ThreeJS and a bunch of other libraries!",
     tags: [
       {
-        name: "TailwindCSS",
+        name: "React",
         color: "blue-text-gradient",
+      },
+      {
+        name: "Parallax",
+        color: "green-text-gradient",
       },
       {
         name: "ThreeJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "3d_react",
         color: "pink-text-gradient",
       },
     ],
-    image: port_3d,
-    source_link: "https://shinchancode.github.io/3d-react-portfolio/",
-    source_code_link: "https://github.com/shinchancode/3d-react-portfolio",
+    image: rportfolio,
+    source_link: "https://kairostay.com/",
   },
   {
-    name: "React portfolio",
+    name: "Blog",
     description:
-      "Website made using React in the FrontEnd, Nodejs and Express in the BackEnd. Responsive webpage is made with user friendly interface",
+      "This blog is built with Hexo, an SSG. I use it to write about things that interest me (like quantum!), and to track my progress in my cybersecurity journey :D",
     tags: [
       {
-        name: "nodejs",
+        name: "Hexo",
         color: "blue-text-gradient",
       },
       {
-        name: "React",
+        name: "SSG",
         color: "green-text-gradient",
       },
-      {
-        name: "html css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: react1,
-    source_link: "https://shinchancode.github.io/React-Portfolio/",
-    source_code_link: "https://github.com/shinchancode/React-Portfolio",
+    image: blog,
+    source_link: "https://blog.kairostay.com/",
   },
   {
-    name: "30 Days of JavaScript",
+    name: "Deprecated Portfolio",
     description:
-      "Website made using Nodejs and Express in the BackEnd. A 30 Days Of JavaScript challenge to learn JavaScript by making 30 different projects using some famous JavaScript libraries.",
+      "My first ever website, built with pure HTML, CSS and JS, with Bootstrap. I loved the simplicity of vanilla HTML, but as the contents grew, it had a horrible loading speed :(. So I turned to React instead!",
     tags: [
       {
-        name: "JavaScript",
+        name: "Bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "30dayschallenge",
+        name: "HTML",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jsp,
-    source_link: "https://rathi-30-days-of-javascript.onrender.com/",
-    source_code_link: "https://github.com/shinchancode/30-Days-of-Javascript",
+    image: portfolio,
+    source_link: "https://github.com/kairos-t/kairos-t.github.io",
   },
   {
-    name: "Chit Chat Application",
+    name: "Portfolio",
     description:
-      "Real-Time, event based communication in Nodejs and browser-based Chat application. Uses Socket.io for implementation for WebSockets protocol. This application built using Node.js, Express, Socket.io and Render (Hosting)",
+      "During a term break, I challenged myself to further hone my web dev skills as a beginner. I worked on projects for others, and made this (albeit still in progress) art portfolio!",
     tags: [
       {
-        name: "Chatting",
+        name: "Bootstrap",
         color: "blue-text-gradient",
       },
       {
-        name: "socket.io",
+        name: "HTML",
         color: "green-text-gradient",
       },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
     ],
-    image: chitchat,
-    source_link: "https://chit-chat-app.onrender.com/",
-    source_code_link:
-      "https://github.com/shinchancode/Chit-Chat-Real_time_chat_app",
-  },
-  {
-    name: "Notes Application",
-    description:
-      "A web-based notes app made by using javaScript, This web-based notes app having functionalities like Drag and drop, Search notes etc.",
-    tags: [
-      {
-        name: "notes",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: notes,
-    source_link: "https://shinchancode.github.io/Notes-App/",
-    source_code_link: "https://github.com/shinchancode/Notes-App",
+    image: freelance,
+    source_link: "https://github.com/Kairos-T/JulianPortfolio",
   },
 ];
 
-export const otherProject = [
+export const researchProject = [
   {
-    name: "Multilingual Multiple Choice Question Generation",
+    name: "Capstone Project",
     description:
-      "Final Year Project : Its a low level and high level model where we automate the process of creating objective question assessment using LSTM(at low level) and Transformer(at high level) models for multiple languages.",
+      "I conducted research on the correlation between strength and degradability of various plastics. After collecting the results, I utilised Excel to model trends and create visualisations to showcase the results.",
     tags: [
       {
-        name: "machine learning",
+        name: "STEM_Elective",
         color: "blue-text-gradient",
       },
       {
-        name: "multilingual",
+        name: "Data_Science",
         color: "green-text-gradient",
       },
-      {
-        name: "BE_Project",
-        color: "pink-text-gradient",
-      },
     ],
-    image: be,
-    source_link:
-      "https://drive.google.com/drive/folders/1LECu5ENk_zsowbPeRN_R1V8Rf2Gp7N6l",
-    source_code_link: "https://github.com/shinchancode/Final-Year-Project",
-  },
-
-  {
-    name: "DBMS Lab",
-    description:
-      "Semester 4 : DBMS Lab. Topics included: ER/EER Diagram, DDL statements, primary key and foreign key constraint., SQL queries with different functions, Views, PL/SQL, Trigger (Row level and statement level) and cursor.",
-    tags: [
-      {
-        name: "MySql",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "dbms",
-        color: "green-text-gradient",
-      },
-      {
-        name: "semester",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: sql,
-    source_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
-    source_code_link: "https://github.com/shinchancode/DBMS-SQL-Lab",
+    image: stem,
+    source_link: "",
   },
   {
-    name: "SQL : Library Management System",
+    name: "Science Mentorship Programme",
     description:
-      "Semester 4 : DBMS Mini Project. Created a library management system using SQL and different functionalities.",
+      "Under this internship, I investigated the utilisation of Arduino to streamline physical data collection to reduce experimental errors to a 1% margin. Harnessing this methodology, I researched into the kinetics of chemistry reactions.",
     tags: [
       {
-        name: "sql",
+        name: "Data_Science",
         color: "blue-text-gradient",
       },
       {
-        name: "management",
+        name: "Arduino",
         color: "green-text-gradient",
       },
-      {
-        name: "miniproject",
-        color: "pink-text-gradient",
-      },
     ],
-    image: mini,
-    source_link:
-      "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
-    source_code_link:
-      "https://github.com/shinchancode/Mini-Project-SQL-LibraryManagement",
-  },
-  {
-    name: "Pyhton : Snake and Ladder",
-    description:
-      "Snake and Ladder game using python language. A simple command line interface snake and ladder game",
-    tags: [
-      {
-        name: "snake and ladder",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "python",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CLI",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: snl,
-    source_link:
-      "https://github.com/shinchancode/MINI_PROJECT-Snake-and-Ladder",
-    source_code_link:
-      "https://github.com/shinchancode/MINI_PROJECT-Snake-and-Ladder",
+    image: smp,
+    source_link: "",
   },
 ];
 
@@ -598,7 +431,7 @@ const experiences = [
     title: "Research Intern",
     company_name: "Science Centre Singapore",
     icon: scs,
-    iconBg:"#ffffff",
+    iconBg: "#ffffff",
     date: "Jan 2021 - Feb 2022",
     // link: "",
     points: [
