@@ -1,8 +1,3 @@
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-
 import github from "./github.png";
 import demo from "./demo.png";
 
@@ -39,10 +34,6 @@ import stem from "./project/stem.jpg";
 import resume from "./files/resume/Resume.pdf"
 
 export {
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   css,
   git,
