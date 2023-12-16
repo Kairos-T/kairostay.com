@@ -6,7 +6,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 
 import github from "./github.png";
-import demo from "./demo.png"
+import demo from "./demo.png";
 
 import css from "./tech/css.png";
 import git from "./tech/git.png";
@@ -23,6 +23,7 @@ import hf from "./hf.svg";
 import bny from "./bny.png";
 import clg from "./clg.png";
 import school from "./school.png";
+import np from "./np.png";
 
 import crypto from "./project/crypto.jpg";
 import oop from "./project/oop.png";
@@ -62,15 +63,30 @@ export {
   reactjs,
   tailwind,
   threejs,
-  hf,holopin,
+  hf,
+  holopin,
   bny,
   demo,
   clg,
   school,
   crypto,
   aarti,
-  oop,crud,dwld,onetomany,yml,
-  trie,ds,cg,
-  port_3d, jsp, chitchat, notes, react1,
-  be,sql, mini, snl,
+  oop,
+  crud,
+  dwld,
+  onetomany,
+  yml,
+  trie,
+  ds,
+  cg,
+  port_3d,
+  jsp,
+  chitchat,
+  notes,
+  react1,
+  be,
+  sql,
+  mini,
+  snl,
+  np,
 };
