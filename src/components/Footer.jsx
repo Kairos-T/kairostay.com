@@ -13,7 +13,7 @@ const Footer = () => {
             Kairos Tay
           </a>
         </p>
-        <p className="green-text-gradient">No. of Visitors | <img className="visitcounter" src="https://www.cutercounter.com/hits.php?id=hvxopnap&nd=6&style=16" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></p>
+        <p className="green-text-gradient">No. of Visitors | <img className="visitcounter" src="https://www.cutercounter.com/hits.php?id=hvmxopodq&nd=6&style=16" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></p>
 
       </div>
     );
