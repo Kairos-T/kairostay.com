@@ -391,20 +391,6 @@ const experiences = [
     ],
   },
   {
-    title: "Research Intern",
-    company_name: "Science Centre Singapore",
-    icon: scs,
-    iconBg: "#ffffff",
-    date: "Jan 2021 - Feb 2022",
-    // link: "",
-    points: [
-      "Developed methodologies to minimise experimental discrepancies to a 1% error margin. ",
-      "Leveraged tools such as LibreCAD, Arduino, and Excel to enhance data analysis efficiency and accuracy. ",
-      "Authored a paper, presenting research findings to panel and attendees at the Youth Science Conference. ",
-    ],
-    // link: "https://",
-  },
-  {
     title: "Student Researcher",
     company_name: "Commonwealth Secondary School",
     icon: school,
@@ -418,6 +404,21 @@ const experiences = [
     ],
     // link: "https://",
   },
+  {
+    title: "Research Intern",
+    company_name: "Science Centre Singapore",
+    icon: scs,
+    iconBg: "#ffffff",
+    date: "Jan 2021 - Feb 2022",
+    // link: "",
+    points: [
+      "Developed methodologies to minimise experimental discrepancies to a 1% error margin. ",
+      "Leveraged tools such as LibreCAD, Arduino, and Excel to enhance data analysis efficiency and accuracy. ",
+      "Authored a paper, presenting research findings to panel and attendees at the Youth Science Conference. ",
+    ],
+    // link: "https://",
+  },
+
   {
     title: "Student",
     company_name: "Commonwealth Secondary School",
