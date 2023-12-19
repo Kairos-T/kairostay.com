@@ -371,7 +371,7 @@ export const researchProject = [
     ],
     image: smp,
     source_link:
-      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/21CWSS02%20Research%20Paper.pdf",
+      "/files/research/21CWSS02 Research Paper.pdf",
   },
 ];
 
