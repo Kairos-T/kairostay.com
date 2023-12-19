@@ -16,7 +16,7 @@ const Footer = () => {
         No. of Visitors |{" "}
         <img
           className="visitcounter"
-          src="https://www.cutercounter.com/hits.php?id=hvmxopodq&nd=6&style=16"
+          src="https://hitwebcounter.com/counter/counter.php?page=10365307&style=0025&nbdigits=5&type=page&initCount=100"
           title="Counter Widget"
           Alt="Visit counter For Websites"
           border="0"
