@@ -157,7 +157,7 @@ export const eventProject = [
   {
     name: "Down Under CTF",
     description:
-      "This was a two-day CTF that I participated with one of my friends. I managed to explore GSMA's Location API, which allowed me to 'track' a target's location using their phone number, which was really intriguing.",
+      "This was a two-day CTF that I participated with my friends. I managed to explore GSMA's Location API, which allowed me to 'track' a target's location using their phone number, which was really intriguing.",
     tags: [
       {
         name: "Cybersecurity",
@@ -194,8 +194,7 @@ export const eventProject = [
       },
     ],
     image: sentinel,
-    source_link:
-      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/events/SentinelCertificate.png",
+    source_link: "/files/events/SentinelCertificate.png",
   },
 ];
 
@@ -352,8 +351,7 @@ export const researchProject = [
       },
     ],
     image: stem,
-    source_link:
-      "https://github.com/Kairos-T/kairostay.com/blob/main/src/assets/files/research/Capstone%20Research%20Paper.pdf",
+    source_link: "/files/research/Capstone Research Paper.pdf",
   },
   {
     name: "Science Mentorship Programme",
@@ -370,8 +368,7 @@ export const researchProject = [
       },
     ],
     image: smp,
-    source_link:
-      "/files/research/21CWSS02 Research Paper.pdf",
+    source_link: "/files/research/21CWSS02 Research Paper.pdf",
   },
 ];
 
