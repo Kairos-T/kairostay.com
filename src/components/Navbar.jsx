@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { resume } from "../assets";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -51,11 +50,7 @@ const Navbar = () => {
           <div
             className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer`}
           >
-            <a
-              href={resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/files/resume/Resume.pdf" target="_blank" rel="noopener noreferrer">
               &gt; Resume
             </a>
           </div>
