@@ -41,13 +41,6 @@ const Navbar = () => {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center gap-5">
-          {/*<a*/}
-          {/*    href="#"*/}
-          {/*    className={`nav-link ns-blue ${active === "" ? "active" : ""}`}*/}
-          {/*    onClick={() => scrollToSection("")}*/}
-          {/*>*/}
-          {/*  ./Home*/}
-          {/*</a>*/}
           <div
             className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer text-decoration-none`}
           >
@@ -85,7 +78,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain logo" /> */}
           <p className="sm:block text-white text-[18px] font-bold cursor-pointer flex ">
             root@kairos:~
           </p>
