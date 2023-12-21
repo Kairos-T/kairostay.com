@@ -1,18 +1,16 @@
-.top2
-{
-    text-decoration: underline;
+.top2 {
+  text-decoration: underline;
 }
 
-.logo
-{
-    border-radius: 50%;
+.logo {
+  border-radius: 50%;
 }
 
 .translucent {
-    background-color: rgba(255, 255, 255, 5%);
+  background-color: rgba(255, 255, 255, 5%);
   box-shadow: 0 0 5px rgb(0, 0, 0, 15%);
   backdrop-filter: blur(10px);
-  }
+}
 
 .text-decoration-none {
   text-decoration: none !important;
