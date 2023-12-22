@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white heroHeadText`}>
             root@kairos:~# whoami
           </h1>
-          <h3 className="heroHeadText text-white" style={{fontSize: '2rem'}}>
+          <h3 className="heroHeadText text-white" style={{ fontSize: "2rem" }}>
             Hi! I'm Kairos. I'm:
           </h3>
           <h3>
@@ -62,8 +62,8 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className="absolute xs:bottom-10 bottom-32 w-10 flex justify-end items-center">
-        <a href="#education">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#experience">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
