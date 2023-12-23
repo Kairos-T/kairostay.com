@@ -154,7 +154,7 @@ const Navbar = () => {
             scrolled ? "translucent" : "bg-transparent"
           }`}
         >
-          <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+          <div className="w-full flex justify-between px-16 items-center max-w-7xl mx-auto">
             <div className="flex items-center gap-5">
               <div
                 className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer text-decoration-none`}
