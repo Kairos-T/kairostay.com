@@ -58,9 +58,17 @@ const Navbar = () => {
             scrolled ? "translucent" : "bg-transparent"
           }`}
         >
-          <p className="sm:block text-white text-[18px] font-bold cursor-pointer flex ">
+          <a
+            href="#"
+            className={`sm:block text-white text-[18px] font-bold cursor-pointer flex ${
+              active === "project" ? "active" : ""
+            }`}
+            onClick={() => {
+              scrollToSection("#");
+            }}
+          >
             root@kairos:~
-          </p>
+          </a>
           <div className="cursor-pointer ml-auto" onClick={toggleMobileMenu}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +174,6 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     scrollToSection("experience");
-                    toggleMobileMenu();
                   }}
                 >
                   ./Experience
@@ -181,7 +188,6 @@ const Navbar = () => {
                   className={`nav-link ${active === "project" ? "active" : ""}`}
                   onClick={() => {
                     scrollToSection("project");
-                    toggleMobileMenu();
                   }}
                 >
                   ./Projects
@@ -190,9 +196,17 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <p className="sm:block text-white text-[18px] font-bold cursor-pointer flex ">
+              <a
+                href="#"
+                className={`sm:block text-white text-[18px] font-bold cursor-pointer flex ${
+                  active === "project" ? "active" : ""
+                }`}
+                onClick={() => {
+                  scrollToSection("#");
+                }}
+              >
                 root@kairos:~
-              </p>
+              </a>
             </div>
 
             <div className="sm:flex gap-5">
@@ -204,7 +218,6 @@ const Navbar = () => {
                   className={` ${active === "contact" ? "active" : ""}`}
                   onClick={() => {
                     scrollToSection("contact");
-                    toggleMobileMenu();
                   }}
                 >
                   ./Contact
