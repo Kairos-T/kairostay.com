@@ -203,7 +203,7 @@ export const prgProject = [
   {
     name: "QRNG",
     description:
-      "Quantum Random Number Generator using Qiskit, generating 'truly' random numbers by leveraging on quantum mechanics. This is opposed to pseudo-random number generators.",
+      "Quantum Random Number Generator using Qiskit leveraging on quantum mechanics' true randomness. This is integrated with Flask to provide a web interface.",
     tags: [
       {
         name: "Quantum",
