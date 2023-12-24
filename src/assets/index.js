@@ -19,6 +19,7 @@ import dsta from "./project/dsta.jpg";
 import ductf from "./project/ductf.png";
 import sentinel from "./project/sentinel.png";
 
+import qrng from "./project/qrng.png";
 import bb84 from "./project/bb84.png";
 import nltk from "./project/nltk.png";
 import malware from "./project/malware.png";
@@ -56,4 +57,5 @@ export {
   rportfolio,
   freelance,
   autopsy,
+  qrng
 };
