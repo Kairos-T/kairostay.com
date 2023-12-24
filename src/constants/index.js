@@ -22,6 +22,7 @@ import {
   freelance,
   github,
   autopsy,
+  qrng,
 } from "../assets";
 
 const awards = [
@@ -199,6 +200,27 @@ export const eventProject = [
 ];
 
 export const prgProject = [
+  {
+    name: "QRNG",
+    description:
+      "Quantum Random Number Generator using Qiskit, generating 'truly' random numbers by leveraging on quantum mechanics. This is opposed to pseudo-random number generators.",
+    tags: [
+      {
+        name: "Quantum",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Random Number Generator",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Cybersecurity",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: qrng,
+    source_link: "https://github.com/Kairos-T/QRNG",
+  },
   {
     name: "BB84",
     description:
