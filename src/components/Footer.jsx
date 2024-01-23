@@ -8,6 +8,7 @@ import "./Footer.scss";
 config.autoAddCss = false;
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <div className="footer text-center">
             <p>
@@ -25,6 +26,10 @@ const Footer = () => {
                     {" "}
                     Kairos Tay
                 </a>
+                <p className={"green-text-gradient"}>
+
+                    © 2023 - {currentYear}
+                </p>
             </p>
         </div>
     );
