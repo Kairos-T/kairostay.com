@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Tech from './Tech';
 import Experience from './Experience';
 import Project from './Project';
-import Profile from './Profile';
+import Profile from './Contact.jsx';
 import Achievement from './Achievement';
 import Footer from './Footer'
 
