@@ -1,5 +1,4 @@
 import React from "react";
-
 import {SectionWrapper} from "../hoc";
 import {profiles} from "../constants";
 import {slideIn, textVariant} from "../utils/motion";
@@ -7,9 +6,9 @@ import {motion} from "framer-motion";
 import {styles} from "../styles";
 import {EarthCanvas} from "./canvas";
 
-import "./Profile.scss";
+import "./Contact.scss";
 
-const Profile = () => {
+const Contact = () => {
     return (
         <>
             <motion.div id="contact" variants={textVariant()}>
@@ -40,4 +39,4 @@ const Profile = () => {
         </>
     );
 };
-export default SectionWrapper(Profile, "");
+export default SectionWrapper(Contact, "");
