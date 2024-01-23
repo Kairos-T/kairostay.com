@@ -21,26 +21,33 @@ $maincolor: rgb(3, 3, 37);
       border-radius: 10px;
     }
   }
+
   .Box1 {
     cursor: pointer;
+
     .image {
       z-index: 1;
     }
+
     h3,
     .title {
       opacity: 0;
     }
+
     &:hover {
       background-color: $maincolor;
+
       .image {
         opacity: 0.2;
         z-index: 0;
       }
+
       h3 {
         opacity: 1;
         z-index: 1;
         color: rgb(255, 255, 255);
       }
+
       .title {
         opacity: 1;
         z-index: 1;

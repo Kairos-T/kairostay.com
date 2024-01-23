@@ -1,25 +1,22 @@
 @import "../global.scss";
 
-.footer{
-    position: relative;
-    bottom: 2rem;
-    padding-bottom: 4rem;
+.footer {
+  position: relative;
+  bottom: 2rem;
+  padding-bottom: 4rem;
 
-    @include mobile
-    {
-        font-size: 12px;
-    }
+  @include mobile {
+    font-size: 12px;
+  }
 
-    p 
-    {
-      a, h1
-      {
-        text-decoration: none;
-        color: #52f165;
-      }
+  p {
+    a, h1 {
+      text-decoration: none;
+      color: #52f165;
     }
-    .visitcounter
-    {
-      display: inline;
-    }
+  }
+
+  .visitcounter {
+    display: inline;
+  }
 }

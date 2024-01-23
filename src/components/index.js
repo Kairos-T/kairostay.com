@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import {BallCanvas, ComputersCanvas, EarthCanvas, StarsCanvas} from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import Tech from './Tech';
@@ -11,18 +11,18 @@ import Education from './Education';
 import Footer from './Footer'
 
 export {
-  Hero,
-  Navbar,
-  Content,
-  Tech,
-  Experience,
-  Project,
-  Education,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
-  StarsCanvas,
-  Profile,
-  Footer,
-  Achievement,
+    Hero,
+    Navbar,
+    Content,
+    Tech,
+    Experience,
+    Project,
+    Education,
+    EarthCanvas,
+    BallCanvas,
+    ComputersCanvas,
+    StarsCanvas,
+    Profile,
+    Footer,
+    Achievement,
 }

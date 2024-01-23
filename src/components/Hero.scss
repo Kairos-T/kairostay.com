@@ -4,6 +4,7 @@
 .ityped-cursor {
   animation: blink 2s infinite;
 }
+
 @keyframes blink {
   50% {
     opacity: 1;
@@ -15,12 +16,14 @@
 
 .head1 {
   top: 80px;
+
   .head2 {
     line-height: 95px;
     @include mobile4 {
       line-height: 70px;
     }
   }
+
   .name {
     font-family: "Kalam", cursive;
     font-weight: 900;
