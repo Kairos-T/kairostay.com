@@ -27,15 +27,6 @@ const Footer = () => {
           Kairos Tay
         </a>
       </p>
-      <p className="green-text-gradient">
-        No. of Visitors |{" "}
-        <img
-          className="visitcounter"
-          src="https://hitwebcounter.com/counter/counter.php?page=10365307&style=0025&nbdigits=5&type=page&initCount=100"
-          title="Counter Widget"
-          border="0"
-        />
-      </p>
     </div>
   );
 };
