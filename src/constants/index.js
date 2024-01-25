@@ -413,7 +413,7 @@ const experiences = [
         company_name: "Commonwealth Secondary School",
         icon: school,
         iconBg: "#FFFFFF",
-        date: "Dec 2020 - July 2022",
+        date: "Dec 2021 - July 2022",
         points: [
             "Conducted an independent research project investigating the correlation between the degradability of plastic and its tensile strength.",
             "Leveraged Microsoft Excel to optimize data collection, analysis, and creating visualisations.",
