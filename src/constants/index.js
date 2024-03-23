@@ -27,6 +27,12 @@ import {
 
 const awards = [
     {
+        title: "3rd in Cohort - AY23/24 Sem 1",
+    },
+    {
+        title: "Director's List - AY23/24 Sem 1",
+    },
+    {
         title: "DSTA Polytechnic Digital Scholarship",
     },
     {
@@ -403,8 +409,9 @@ const experiences = [
         date: "Apr 2023 - Present",
         points: [
             "DSTA Polytechnic Digital Scholar",
-            "NullSec Tech Intern EXCO: Led workshop on OSINT; Created crypto, forensics and misc challenges for Lag and Crash CTF.",
-            "Participated in various CTFs: Cyber:100, CDDC, GreyCTF, SEETF, AYCEP, and many others. ",
+            "cGPA: 4.00",
+            "NullSec Head of Tech EXCO: Led workshop on OSINT; Created challenges for interpoly Lag and Crash CTF.",
+            "Participated in various CTFs: Cyber:100, CDDC, GreyCTF, SEETF, AYCEP, and many others.",
             "Participated in MINDEF's Sentinel Programme, simulating real-world CTI and threat hunting exercises. ",
         ],
     },
