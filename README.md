@@ -10,20 +10,20 @@ This README might get a little lengthy, so heres a ToC to help you get around.
 
 ## Getting Started
 1. Clone the Repository
-```bash
-git clone https://github.com/Kairos-T/kairostay.com
-cd kairostay.com
-```
+    ```bash
+    git clone https://github.com/Kairos-T/kairostay.com
+    cd kairostay.com
+    ```
 
 2. Install Dependencies
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 3. Start the Development Server
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
 4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the results!
 
