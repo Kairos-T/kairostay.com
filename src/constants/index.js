@@ -411,7 +411,7 @@ const experiences = [
             "DSTA Polytechnic Digital Scholar",
             "cGPA: 4.00",
             "NullSec Head of Tech EXCO: Led workshop on OSINT; Created challenges for interpoly Lag and Crash CTF.",
-            "Participated in various CTFs: Cyber:100, CDDC, GreyCTF, SEETF, AYCEP, and many others.",
+            "Participated in various CTFs (CDDC, GreyCTF, SEETF, etc.) with 404Unfound - A team led by my friend and I.",
             "Participated in MINDEF's Sentinel Programme, simulating real-world CTI and threat hunting exercises. ",
         ],
     },
