@@ -1,5 +1,5 @@
 # kairostay.com
-[TO BE] Revamped portfolio site built with React with Parallax, React Three Fibre, Tailwind and a bunch of other stuff :D
+Revamped portfolio site built with React with Parallax, React Three Fibre, Tailwind and a bunch of other stuff :D
 
 ## Table of Contents
 This README might get a little lengthy, so heres a ToC to help you get around.
@@ -26,9 +26,6 @@ This README might get a little lengthy, so heres a ToC to help you get around.
     ```
 
 4. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the results!
-
-## Features
-To be Updated :)
 
 ## References
 - [Unix Terminal Look](https://reactportfoliotemplate.paytonpierce.dev/about)
