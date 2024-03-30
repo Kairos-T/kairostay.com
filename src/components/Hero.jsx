@@ -1,10 +1,10 @@
-import {motion} from "framer-motion";
-import React, {useEffect, useRef} from "react";
-import {styles} from "../styles";
-import {init} from "ityped";
-import {AiOutlineGithub} from "react-icons/ai";
-import {ImLinkedin} from "react-icons/im";
-import {BiLinkAlt} from "react-icons/bi";
+import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { styles } from "../styles";
+import { init } from "ityped";
+import { AiOutlineGithub } from "react-icons/ai";
+import { ImLinkedin } from "react-icons/im";
+import { BiLinkAlt } from "react-icons/bi";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -21,49 +21,37 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className={`relative w-full h-screen flex mx-auto`}>
-            <div
-                className={`head1 max-w-7xl mx-auto ${styles.paddingX} flex justify-center items-center flex-row gap-5`}
-            >
+        <section className={`relative w-full min-h-screen flex mx-auto`}>
+            <div className={`head1 max-w-7xl mx-auto ${styles.paddingX} flex justify-center items-center flex-row gap-5`}>
                 <div className="flex flex-col mt-5"></div>
 
                 <div className="head2 text-center">
-                    <h1 className={`${styles.heroHeadText} text-white heroHeadText`}>
+                    <h1 className={`${styles.heroHeadText} text-white heroHeadText`} style={{ fontSize: "clamp(2rem, 6vw, 4rem)" }}>
                         root@kairos:~# whoami
                     </h1>
-                    <h3 className="heroHeadText text-white" style={{fontSize: "2rem"}}>
+                    <h3 className="heroHeadText text-white" style={{ fontSize: "clamp(1.5rem, 4vw, 2rem)" }}>
                         Hi! I'm Kairos. I'm:
                     </h3>
                     <h3>
-            <span
-                ref={textRef}
-                className={`${styles.heroSubText} mt-2 green-text-gradient heroHeadText`}
-            ></span>
+                        <span ref={textRef} className={`${styles.heroSubText} mt-2 green-text-gradient heroHeadText`} style={{ fontSize: "clamp(1rem, 2.5vw, 1.5rem)" }}></span>
                     </h3>
-                    <div className="link1 mt-4">
-                        <a href="https://github.com/kairos-t" target="_blank">
-                            <AiOutlineGithub/>
+                    <div className="link1 mt-4 flex justify-center">
+                        <a href="https://github.com/kairos-t" target="_blank" className="icon-link">
+                            <AiOutlineGithub className="icon" />
                         </a>
-                        <a
-                            href="https://www.linkedin.com/in/kairoshestiatay/"
-                            target="_blank"
-                        >
-                            <ImLinkedin/>
+                        <a href="https://www.linkedin.com/in/kairoshestiatay/" target="_blank" className="icon-link">
+                            <ImLinkedin className="icon" />
                         </a>
-                        {
-                            <a href="https://blog.kairostay.com" target="_blank">
-                                <BiLinkAlt/>
-                            </a>
-                        }
+                        <a href="https://blog.kairostay.com" target="_blank" className="icon-link">
+                            <BiLinkAlt className="icon" />
+                        </a>
                     </div>
                 </div>
             </div>
 
-            {/* <ComputersCanvas /> */}
-            <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+            <div className="absolute xs:bottom-3 s:bottom-13 bottom-20 md:bottom-32 w-full flex justify-center items-center">
                 <a href="#experience">
-                    <div
-                        className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+                    <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
                         <motion.div
                             animate={{
                                 y: [0, 24, 0],
