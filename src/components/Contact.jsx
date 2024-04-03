@@ -30,7 +30,7 @@ const Contact = () => {
                     <div className="skill" data-aos="fade-up" data-aos-delay="200">
                         <div className="icon-container">
                             <a href={profile.link} target="_blank">
-                                <img src={profile.icon}/>
+                                <img src={profile.icon} alt={profile.name}/>
                             </a>
                         </div>
                     </div>
