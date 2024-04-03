@@ -476,18 +476,22 @@ const educations = [
 
 const profiles = [
     {
+        name: "GitHub",
         link: "https://github.com/kairos-t",
         icon: github,
     },
     {
+        name: "LinkedIn",
         link: "https://www.linkedin.com/in/kairoshestiatay/",
         icon: "https://img.icons8.com/ios-filled/FFFFFF/linkedin.png",
     },
     {
+        name: "Email",
         link: "mailto:contact@kairostay.com",
         icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
     },
     {
+        name: "Telegram",
         link: "https://t.me/kairostay",
         icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
     },
