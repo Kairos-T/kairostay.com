@@ -483,7 +483,6 @@ export {
     list,
     technologies,
     experiences,
-    educations,
     awards,
     achievements,
     profiles,
