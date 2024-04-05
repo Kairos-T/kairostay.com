@@ -456,24 +456,6 @@ const experiences = [
     },
 ];
 
-const educations = [
-    {
-        degree: "Dip",
-        branch: "Cybersecurity & Digital Forensics",
-        marks: "cGPA: 4.00",
-        name: "Ngee Ann Polytechnic",
-        year: "2023-Present",
-        image: np,
-    },
-    {
-        branch: "O Level",
-        marks: "6 Distinctions",
-        name: "Commonwealth Secondary School",
-        year: "2018-2022",
-        image: school,
-    },
-];
-
 const profiles = [
     {
         name: "GitHub",
