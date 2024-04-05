@@ -51,9 +51,6 @@ const ExperienceCard = ({experience}) => {
                         {point}
                     </li>
                 ))}
-                {/* <a href={experience.link} className="align-center flex justify-center blue-text-gradient" target="_blank">
-            LINK
-          </a> */}
             </ul>
         </VerticalTimelineElement>
     );
