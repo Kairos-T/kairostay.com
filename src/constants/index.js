@@ -313,10 +313,10 @@ export const webProject = [
     {
         name: "Blog",
         description:
-            "This blog is built with Hexo, an SSG. I use it to write about things that interest me (like quantum!), and to track my progress in my cybersecurity journey :D",
+            "A simple and intuitively designed blog, built with a Jekyll theme. I shed light on my journey in cybersecurity through writing about my experiences in CTFs and other topics that pique my interest.",
         tags: [
             {
-                name: "Hexo",
+                name: "Jekyll",
                 color: "blue-text-gradient",
             },
             {
