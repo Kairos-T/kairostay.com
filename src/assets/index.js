@@ -13,6 +13,8 @@ import np from "./np.png";
 
 import scs from "./scs.png";
 
+import ensign from "./ensign.jpg";
+
 import aisp from "./project/aisp.png";
 import dsta from "./project/dsta.jpg";
 
@@ -43,6 +45,7 @@ export {
     school,
     np,
     scs,
+    ensign,
     aisp,
     dsta,
     ductf,

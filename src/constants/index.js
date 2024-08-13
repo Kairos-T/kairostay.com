@@ -14,6 +14,7 @@ import {
   malware,
   nltk,
   np,
+  ensign,
   portfolio,
   qrng,
   reactjs,
@@ -27,6 +28,9 @@ import {
 
 const awards = [
     {
+        title: "Director's List - AY23/24 Sem 2"
+    },
+    {
         title: "3rd in Cohort - AY23/24 Sem 1",
     },
     {
@@ -37,9 +41,6 @@ const awards = [
     },
     {
         title: "AiSP SVRP Bronze Award 2023",
-    },
-    {
-        title: "EAGLES Award 2022",
     },
 ];
 
@@ -402,6 +403,16 @@ export const researchProject = [
 
 const experiences = [
     {
+        title: "SOC Analyst Intern",
+        company_name: "Ensign InfoSecurity",
+        icon: ensign,
+        iconBg: "#ffffff",
+        date: "Aug 2024 - Present",
+        points: [
+            "Stay tuned!",
+        ],
+    },
+    {
         title: "Cybersecurity & Digital Forensics Student",
         company_name: "Ngee Ann Polytechnic",
         icon: np,
@@ -410,21 +421,8 @@ const experiences = [
         points: [
             "DSTA Polytechnic Digital Scholar",
             "cGPA: 4.00",
-            "NullSec Head of Tech EXCO: Led workshop on OSINT; Created challenges for interpoly Lag and Crash CTF.",
-            "Participated in various CTFs (CDDC, GreyCTF, SEETF, etc.) with 404Unfound - A team led by my friend and I.",
-            "Participated in MINDEF's Sentinel Programme, simulating real-world CTI and threat hunting exercises. ",
-        ],
-    },
-    {
-        title: "Student Researcher",
-        company_name: "Commonwealth Secondary School",
-        icon: school,
-        iconBg: "#FFFFFF",
-        date: "Dec 2021 - July 2022",
-        points: [
-            "Conducted an independent research project investigating the correlation between the degradability of plastic and its tensile strength.",
-            "Leveraged Microsoft Excel to optimize data collection, analysis, and creating visualisations.",
-            "Presented research findings to 200+, including school leaders, the student body and the wider public at CWSS events.",
+            "NullSec President",
+            "CTF Player with 404Unfound and SSM - CDDC'24 3rd, GreyCTF'24 11th, Hack@AC'24 16th, and many more!",
         ],
     },
     {
