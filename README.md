@@ -2,7 +2,6 @@
 Revamped portfolio site built with React with Parallax, React Three Fibre, Tailwind and a bunch of other stuff :D
 
 ## Table of Contents
-This README might get a little lengthy, so heres a ToC to help you get around.
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [References](#references)
