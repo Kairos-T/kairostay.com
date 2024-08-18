@@ -1,5 +1,5 @@
-import github from "./github.png";
-import demo from "./demo.png";
+import github from "./logos/github.png";
+import demo from "./logos/demo.png";
 
 import autopsy from "./tech/autopsy.svg"
 import css from "./tech/css.png";
@@ -8,12 +8,12 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 
-import school from "./school.png";
-import np from "./np.png";
+import school from "./logos/school.png";
+import np from "./logos/np.png";
 
-import scs from "./scs.png";
+import scs from "./logos/scs.png";
 
-import ensign from "./ensign.jpg";
+import ensign from "./logos/ensign.jpg";
 
 import aisp from "./project/aisp.png";
 import dsta from "./project/dsta.jpg";
