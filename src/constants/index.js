@@ -49,13 +49,13 @@ const achievements = [
         title: "Linux Essentials - Cisco",
     },
     {
-        title: "Networking Essentials - Cisco:",
+        title: "Networking Essentials - Cisco",
     },
     {
-        title: "Cybersecurity Essentials - Cisco:",
+        title: "Cybersecurity Essentials - Cisco",
     },
     {
-        title: "Literacy in AI - AI Singapore:",
+        title: "Literacy in AI - AI Singapore",
     },
 ];
 
@@ -403,7 +403,7 @@ export const researchProject = [
 
 const experiences = [
     {
-        title: "SOC Analyst Intern",
+        title: "DevSecOps Engineer Intern",
         company_name: "Ensign InfoSecurity",
         icon: ensign,
         iconBg: "#ffffff",
