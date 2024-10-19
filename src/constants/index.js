@@ -404,12 +404,13 @@ export const researchProject = [
 const experiences = [
     {
         title: "DevSecOps Engineer Intern",
-        company_name: "Ensign InfoSecurity",
+        company_name: "Ensign InfoSecurity Pte. Ltd.",
         icon: ensign,
         iconBg: "#ffffff",
-        date: "Aug 2024 - Present",
+        date: "Aug 2024 - Oct 2024",
         points: [
-            "Stay tuned!",
+            "Contributed to the R&D efforts of various cybersecurity solutions.",
+            "Collaborated on the development of Ensign's Attack Surface Management product (AEGIS), enabling clients to manage their security posture by proactively identifying vulnerabilities early."
         ],
     },
     {
