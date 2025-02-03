@@ -440,7 +440,7 @@ const experiences = [
         company_name: "Ensign InfoSecurity Pte. Ltd.",
         icon: ensign,
         iconBg: "#ffffff",
-        date: "Aug 2024 - Current",
+        date: "Aug 2024 - Present",
         points: [
             "Contributing to the R&D efforts of various cybersecurity solutions.",
             "Collaborating on the development of Ensign's Attack Surface Management product (AEGIS), enabling clients to manage their security posture by proactively identifying vulnerabilities early."
