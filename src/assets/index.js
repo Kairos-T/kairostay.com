@@ -15,6 +15,7 @@ import scs from "./logos/scs.png";
 
 import ensign from "./logos/ensign.jpg";
 
+import cddc from "./project/cddc.jpeg";
 import aisp from "./project/aisp.png";
 import dsta from "./project/dsta.jpg";
 
@@ -46,6 +47,7 @@ export {
     np,
     scs,
     ensign,
+    cddc,
     aisp,
     dsta,
     ductf,

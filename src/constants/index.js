@@ -4,6 +4,7 @@ import {
   bb84,
   blog,
   css,
+  cddc,
   dsta,
   ductf,
   freelance,
@@ -27,6 +28,12 @@ import {
 } from "../assets";
 
 const awards = [
+    {
+        title: "1st in Cohort - AY24/25 Sem 1",
+    },
+    {
+        title: "Director's List - AY24/25 Sem 1"
+    },
     {
         title: "Director's List - AY23/24 Sem 2"
     },
@@ -67,6 +74,10 @@ const technologies = [
     {
         name: "C#",
         icon: "https://img.icons8.com/color/240/c-sharp-logo.png",
+    },
+    {
+        name: "C++",
+        icon: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000"
     },
     {
         name: "HTML 5",
@@ -126,6 +137,28 @@ const list = [
 ];
 
 export const eventProject = [
+    {
+        name: "CDDC 2024",
+        description:
+            "I participated in the Cyber Defenders Discovery Camp 2024, where I was exposed to various cybersecurity domains. I played with 404Unfound, and we managed to secure the 3rd!",
+        tags: [
+            {
+                name: "Cybersecurity",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CTF",
+                color: "green-text-gradient",
+            },
+            {
+                name: "CDDC",
+                color: "pink-text-gradient",
+            }
+            ],
+        image: cddc,
+        source_link: "https://www.linkedin.com/posts/kairostay_brainhack-cddc-finals-at-the-start-of-activity-7209771568086802433-Iz34?utm_source=share&utm_medium=member_desktop",
+
+    },
     {
         name: "AiSP SVRP",
         description:
@@ -403,14 +436,14 @@ export const researchProject = [
 
 const experiences = [
     {
-        title: "DevSecOps Engineer Intern",
+        title: "DevSecOps Engineer",
         company_name: "Ensign InfoSecurity Pte. Ltd.",
         icon: ensign,
         iconBg: "#ffffff",
-        date: "Aug 2024 - Oct 2024",
+        date: "Aug 2024 - Current",
         points: [
-            "Contributed to the R&D efforts of various cybersecurity solutions.",
-            "Collaborated on the development of Ensign's Attack Surface Management product (AEGIS), enabling clients to manage their security posture by proactively identifying vulnerabilities early."
+            "Contributing to the R&D efforts of various cybersecurity solutions.",
+            "Collaborating on the development of Ensign's Attack Surface Management product (AEGIS), enabling clients to manage their security posture by proactively identifying vulnerabilities early."
         ],
     },
     {
