@@ -18,6 +18,7 @@ import ensign from "./logos/ensign.jpg";
 import cddc from "./project/cddc.jpeg";
 import aisp from "./project/aisp.png";
 import dsta from "./project/dsta.jpg";
+import dstalogo from "./logos/dsta.png"
 
 import ductf from "./project/ductf.png";
 import sentinel from "./project/sentinel.png";
@@ -50,6 +51,7 @@ export {
     cddc,
     aisp,
     dsta,
+    dstalogo,
     ductf,
     sentinel,
     bb84,

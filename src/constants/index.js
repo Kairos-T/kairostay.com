@@ -6,6 +6,7 @@ import {
   css,
   cddc,
   dsta,
+  dstalogo,
   ductf,
   freelance,
   git,
@@ -436,14 +437,25 @@ export const researchProject = [
 
 const experiences = [
     {
+        title: "Cybersecurity Engineer",
+        company_name: "Defence Science and Technology Agency",
+        icon: dstalogo,
+        iconBg: "#ffffff",
+        date: "Mar 2025 - Present",
+        points: [
+            "Malware and Forensics Intern under the Cyber AI department"
+        ]
+    }
+    ,
+    {
         title: "DevSecOps Engineer",
         company_name: "Ensign InfoSecurity Pte. Ltd.",
         icon: ensign,
         iconBg: "#ffffff",
-        date: "Aug 2024 - Present",
+        date: "Aug 2024 - Feb 2025",
         points: [
-            "Contributing to the R&D efforts of various cybersecurity solutions.",
-            "Collaborating on the development of Ensign's Attack Surface Management product (AEGIS), enabling clients to manage their security posture by proactively identifying vulnerabilities early."
+            "Contributed to the R&D efforts of various cybersecurity solutions.",
+            "Collaborated on the development of Attack Surface Management product, enabling clients to manage their security posture by proactively identifying vulnerabilities early."
         ],
     },
     {
