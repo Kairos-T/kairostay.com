@@ -1,31 +1,32 @@
 import {
-  aisp,
-  autopsy,
-  bb84,
-  blog,
-  css,
-  cddc,
-  dsta,
-  dstalogo,
-  ductf,
-  freelance,
-  git,
-  github,
-  html,
-  javascript,
-  malware,
-  nltk,
-  np,
-  ensign,
-  portfolio,
-  qrng,
-  reactjs,
-  rportfolio,
-  school,
-  scs,
-  sentinel,
-  smp,
-  stem,
+    aisp,
+    autopsy,
+    bb84,
+    blog,
+    css,
+    cddc,
+    dsta,
+    dstalogo,
+    freelance,
+    gcc,
+    git,
+    github,
+    html,
+    javascript,
+    malware,
+    nltk,
+    np,
+    ensign,
+    portfolio,
+    qrng,
+    reactjs,
+    rportfolio,
+    school,
+    scs,
+    sentinel,
+    smp,
+    stem,
+    wss
 } from "../assets";
 
 const awards = [
@@ -138,6 +139,36 @@ const list = [
 ];
 
 export const eventProject = [
+   {
+        name: "WorldSkills Singapore 2025",
+        description:
+            "I competed in WorldSkills Singapore under Cyber Security trade, clinching the Bronze medal. I gained invaluable experience through the rigorous training and competition, enhancing my skills in various domains including sysadmin, CTI, pentesting and more.",
+        tags: [
+            {
+                name: "Cybersecurity",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CTF",
+                color: "green-text-gradient",
+            },
+        ],
+        image: wss,
+        source_link: "https://www.linkedin.com/posts/kairostay_extremely-grateful-to-have-represented-ngee-activity-7315715287780052993-l465",
+    },
+    {
+        name: "Global Cybersecurity Camp 2025",
+        description:
+            "I am grateful to have represented Singapore at GCC 2025 in Taiwan. I was exposed to trainings on various niche topics including Threat Modelling, Car Hacking, Kernel Exploitation, and more. My group also managed to clinch best project for the project work! ",
+        tags: [
+            {
+                name: "Cybersecurity",
+                color: "blue-text-gradient",
+            }
+        ],
+        image: gcc,
+        source_link: "https://blog.kairostay.com/posts/gcc-2025/",
+    },
     {
         name: "CDDC 2024",
         description:
@@ -155,7 +186,7 @@ export const eventProject = [
                 name: "CDDC",
                 color: "pink-text-gradient",
             }
-            ],
+        ],
         image: cddc,
         source_link: "https://www.linkedin.com/posts/kairostay_brainhack-cddc-finals-at-the-start-of-activity-7209771568086802433-Iz34?utm_source=share&utm_medium=member_desktop",
 
@@ -181,7 +212,7 @@ export const eventProject = [
     {
         name: "DSTA Award Ceremony",
         description:
-            "Really honoured to have received the DSTA Scholarship after my first semester. Getting this felt like a big confidence boost for my constant efforts in growing my skills in cybersecurity, and I am stoked to continue honing my skills!",
+            "I am really honoured to have received the DSTA Scholarship after my first semester. This scholarship has provided me with ample opportunities to learn and grow in the field of cybersecurity and defence.",
         tags: [
             {
                 name: "DSTA",
@@ -195,27 +226,6 @@ export const eventProject = [
         image: dsta,
         source_link:
             "https://www.linkedin.com/posts/kairoshestiatay_i-remember-jumping-for-joy-a-few-weeks-ago-activity-7125109433042403328-M4m6?utm_source=share&utm_medium=member_desktop",
-    },
-    {
-        name: "Down Under CTF",
-        description:
-            "This was a two-day CTF that I participated with my friends. I managed to explore GSMA's Location API, which allowed me to 'track' a target's location using their phone number, which was really intriguing.",
-        tags: [
-            {
-                name: "Cybersecurity",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "CTF",
-                color: "green-text-gradient",
-            },
-            {
-                name: "OSINT",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: ductf,
-        source_link: "https://404unfound.com/ctfs/ductf23/",
     },
     {
         name: "Sentinel Programme - CTI",
@@ -443,7 +453,8 @@ const experiences = [
         iconBg: "#ffffff",
         date: "Mar 2025 - Present",
         points: [
-            "Malware and Forensics Intern under the Cyber AI department"
+            "Malware and Forensics Intern under the Cyber AI department",
+            "R&D of security tools to streamline malware analysis and incident response processes.",
         ]
     }
     ,
@@ -468,7 +479,7 @@ const experiences = [
             "DSTA Polytechnic Digital Scholar",
             "cGPA: 4.00",
             "NullSec President",
-            "CTF Player with 404Unfound and SSM - CDDC'24 3rd, GreyCTF'24 11th, Hack@AC'24 16th, and many more!",
+            "CTF Player with 404Unfound and SSM - CDDC'24 3rd, GreyCTF'25 6th, GreyCTF'24 11th, and many more!",
         ],
     },
     {
@@ -508,7 +519,7 @@ const profiles = [
     },
     {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/kairoshestiatay/",
+        link: "https://www.linkedin.com/in/kairostay/",
         icon: "https://img.icons8.com/ios-filled/FFFFFF/linkedin.png",
     },
     {
@@ -516,11 +527,11 @@ const profiles = [
         link: "mailto:contact@kairostay.com",
         icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
     },
-    {
-        name: "Telegram",
-        link: "https://t.me/kairostay",
-        icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
-    },
+    // {
+    //     name: "Telegram",
+    //     link: "https://t.me/kairostay",
+    //     icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
+    // },
 ];
 
 export {
