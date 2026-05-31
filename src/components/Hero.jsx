@@ -14,8 +14,6 @@ const Hero = () => {
             showCursor: true,
             strings: [
                 "A Cybersecurity Student",
-                "An Aspiring Researcher",
-                "A Forensics and Quantum Lover",
             ],
         });
     }, []);
@@ -42,7 +40,7 @@ const Hero = () => {
                         <a href="https://github.com/kairos-t" target="_blank" className="icon-link">
                             <AiOutlineGithub className="icon"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/kairoshestiatay/" target="_blank" className="icon-link">
+                        <a href="https://www.linkedin.com/in/kairostay/" target="_blank" className="icon-link">
                             <ImLinkedin className="icon"/>
                         </a>
                         <a href="https://blog.kairostay.com" target="_blank" className="icon-link">

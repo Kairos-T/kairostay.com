@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import {styles} from "../styles";
 import {SectionWrapper} from "../hoc";
 import {textVariant} from "../utils/motion";
-import {achievements, awards} from "../constants";
+import {awards} from "../constants";
 import "./Achievement.scss";
 
 const Achievement = () => {
@@ -24,7 +24,7 @@ const Achievement = () => {
                     <h2
                         className={`${styles.sectionHeadText} sectionHeadText text-center`}
                     >
-                        ls Awards/ Certs/
+                        ls Awards/ 
                     </h2>
                 </motion.div>
             </div>
@@ -35,16 +35,6 @@ const Achievement = () => {
                     {awards.map((award, index) => (
                         <div key={index} className="text-white-100 text-[15px] pl-1  text-center">
                             {award.title}
-                        </div>
-                    ))}
-                </ul>
-                <ul className="mt-5 list-disc ml-5 space-y-2">
-                    <div className={`${styles.sectionSubText} text-center`}>
-                        Certifications:
-                    </div>
-                    {achievements.map((achievement, index) => (
-                        <div key={index} className="text-white-100 text-[15px] pl-1  text-center">
-                            {achievement.title}
                         </div>
                     ))}
                 </ul>

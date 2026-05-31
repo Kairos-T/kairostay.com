@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react";
 import {styles} from "../styles";
 import {demo} from "../assets";
 import {SectionWrapper} from "../hoc";
-import {eventProject, list, prgProject, researchProject, webProject} from "../constants";
+import {eventProject, list, researchProject} from "../constants";
 import {fadeIn, textVariant} from "../utils/motion";
 import ProjectList from "./ProjectList";
 import "./Project.scss";
@@ -90,18 +90,12 @@ const Project = () => {
             case "event":
                 setData(eventProject);
                 break;
-            case "prg":
-                setData(prgProject);
-                break;
-            case "web":
-                setData(webProject);
-                break;
             case "research":
                 setData(researchProject);
                 break;
 
             default:
-                setData(prgProject);
+                setData(eventProject);
         }
     }, [selected]);
 
@@ -115,7 +109,7 @@ const Project = () => {
                     root@kairos:~#
                 </p>
                 <h2 className={`${styles.sectionHeadText} sectionHeadText text-center`}>
-                    ./Events && ./Projects
+                    ./Highlights
                 </h2>
             </motion.div>
 

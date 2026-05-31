@@ -7,20 +7,14 @@ import {
     cddc,
     dsta,
     dstalogo,
-    freelance,
     gcc,
     git,
     github,
     html,
     javascript,
-    malware,
-    nltk,
     np,
     ensign,
-    portfolio,
-    qrng,
     reactjs,
-    rportfolio,
     school,
     scs,
     sentinel,
@@ -31,40 +25,16 @@ import {
 
 const awards = [
     {
-        title: "1st in Cohort - AY24/25 Sem 1",
+        title: "CSIT Gold Medal & Prize (Most Outstanding Achievement)",
     },
     {
-        title: "Director's List - AY24/25 Sem 1"
-    },
-    {
-        title: "Director's List - AY23/24 Sem 2"
-    },
-    {
-        title: "3rd in Cohort - AY23/24 Sem 1",
-    },
-    {
-        title: "Director's List - AY23/24 Sem 1",
+        title: "Group-IB Prize (Most Outstanding Academic Achievement)"
     },
     {
         title: "DSTA Polytechnic Digital Scholarship",
     },
     {
         title: "AiSP SVRP Bronze Award 2023",
-    },
-];
-
-const achievements = [
-    {
-        title: "Linux Essentials - Cisco",
-    },
-    {
-        title: "Networking Essentials - Cisco",
-    },
-    {
-        title: "Cybersecurity Essentials - Cisco",
-    },
-    {
-        title: "Literacy in AI - AI Singapore",
     },
 ];
 
@@ -123,14 +93,6 @@ const list = [
     {
         id: "event",
         title: "Events",
-    },
-    {
-        id: "prg",
-        title: "Python",
-    },
-    {
-        id: "web",
-        title: "Web Dev",
     },
     {
         id: "research",
@@ -250,164 +212,6 @@ export const eventProject = [
     },
 ];
 
-export const prgProject = [
-    {
-        name: "QRNG",
-        description:
-            "Quantum Random Number Generator using Qiskit leveraging on quantum mechanics' true randomness. This is integrated with Flask to provide a web interface.",
-        tags: [
-            {
-                name: "Quantum",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Random Number Generator",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Cybersecurity",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: qrng,
-        source_link: "https://github.com/Kairos-T/QRNG",
-    },
-    {
-        name: "BB84",
-        description:
-            "BB84 QKD Simulator using Qiskit to simulate various environments like perfect implementations, low and high error rates, and the presence of an eavesdropper. This allows us to analyse the effects of these scenarios. ",
-        tags: [
-            {
-                name: "Quantum",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Cryptography",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Cybersecurity",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: bb84,
-        source_link: "https://github.com/Kairos-T/bb84-simulation",
-    },
-    {
-        name: "NLTK Sentiment Analyser",
-        description:
-            "Script to analyse sentiment in text data, using the VADER (NLTK) model to evaluate how positive, neutral, and negative the text is. Then, it outputs the scores and overall labels to a CSV file.",
-        tags: [
-            {
-                name: "Python",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "NLP",
-                color: "green-text-gradient",
-            },
-        ],
-        image: nltk,
-        source_link: "https://github.com/Kairos-T/NLTK-Sentiment-Analyser",
-    },
-    {
-        name: "Malware Scanner",
-        description:
-            "Script that leverages pyClamd and ClamAV daemon to scan files for potential malware, and generates a log detailing if files are clean or contain malware (along with details of it).",
-        tags: [
-            {
-                name: "Python",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Malware",
-                color: "green-text-gradient",
-            },
-            {
-                name: "ClamAV",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: malware,
-        source_link: "https://github.com/Kairos-T/Basic-Malware-Checker",
-    },
-];
-
-export const webProject = [
-    {
-        name: "Portfolio",
-        description:
-            "A revamp of my old portfolio! This is built with React for amazing code reusability. It was inspired by several other React apps and my blog's landing page. This uses Parallax, iType, ThreeJS and a bunch of other libraries!",
-        tags: [
-            {
-                name: "React",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Parallax",
-                color: "green-text-gradient",
-            },
-            {
-                name: "ThreeJS",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: rportfolio,
-        source_link: "https://kairostay.com/",
-    },
-    {
-        name: "Blog",
-        description:
-            "A simple and intuitively designed blog, built with a Jekyll theme. I shed light on my journey in cybersecurity through writing about my experiences in CTFs and other topics that pique my interest.",
-        tags: [
-            {
-                name: "Jekyll",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "SSG",
-                color: "green-text-gradient",
-            },
-        ],
-        image: blog,
-        source_link: "https://blog.kairostay.com/",
-    },
-    {
-        name: "Deprecated Portfolio",
-        description:
-            "My first ever website, built with pure HTML, CSS and JS, with Bootstrap. I loved the simplicity of vanilla HTML, but as the contents grew, it had a horrible loading speed :(. So I turned to React instead!",
-        tags: [
-            {
-                name: "Bootstrap",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "HTML",
-                color: "green-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_link: "https://github.com/kairos-t/kairos-t.github.io",
-    },
-    {
-        name: "Portfolio",
-        description:
-            "During a term break, I challenged myself to further hone my web dev skills as a beginner. I worked on projects for others, and made this (albeit still in progress) art portfolio!",
-        tags: [
-            {
-                name: "Bootstrap",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "HTML",
-                color: "green-text-gradient",
-            },
-        ],
-        image: freelance,
-        source_link: "https://github.com/Kairos-T/JulianPortfolio",
-    },
-];
-
 export const researchProject = [
     {
         name: "Capstone Project",
@@ -453,8 +257,8 @@ const experiences = [
         iconBg: "#ffffff",
         date: "Mar 2025 - Present",
         points: [
-            "Malware and Forensics Intern under the Cyber AI department",
-            "R&D of security tools to streamline malware analysis and incident response processes.",
+            "Developed a full-stack malware analysis pipeline using Vue.js, Python, Docker, and Kong API Gateway, enabling automated submission, orchestration, and reporting of malware analysis workflows.",
+            "Engineered and maintained malware unpacking, deobfuscation, and decompilation tools, reducing manual analysis time by over 10x"
         ]
     }
     ,
@@ -465,8 +269,8 @@ const experiences = [
         iconBg: "#ffffff",
         date: "Aug 2024 - Feb 2025",
         points: [
-            "Contributed to the R&D efforts of various cybersecurity solutions.",
-            "Collaborated on the development of Attack Surface Management product, enabling clients to manage their security posture by proactively identifying vulnerabilities early."
+            "Drove R&D for proactive cybersecurity solutions to safeguard client infrastructure",
+            "Engineered attack surface management and web defacement monitoring tools to continuously discover exposed assets, detect compromise, and support proactive remediation for client environments."
         ],
     },
     {
@@ -476,10 +280,12 @@ const experiences = [
         iconBg: "#ffffff",
         date: "Apr 2023 - Present",
         points: [
-            "DSTA Polytechnic Digital Scholar",
-            "cGPA: 4.00",
-            "NullSec President",
-            "CTF Player with 404Unfound and SSM - CDDC'24 3rd, GreyCTF'25 6th, GreyCTF'24 11th, and many more!",
+            "CGPA: 4.0/4.0 (Top in cohort)", 
+            "Awards: CSIT Gold Medal & Prize, Group-IB Prize",
+            "Scholarship: DSTA Polytechnic Digital Scholar",
+            "Leadership: President, NullSec: Led CTFs, cybersecurity workshops, and YCEP in collaboration with CSA.",
+            "Competitions: WorldSkills Singapore 2025 — 3rd; CDDC 2024 — 3rd; GreyCTF 2025 — 6th",
+            "Represented Singapore at the Global Cybersecurity Camp 2025, winning the \"Best Project\" award"
         ],
     },
     {
@@ -489,9 +295,8 @@ const experiences = [
         iconBg: "#ffffff",
         date: "Jan 2021 - Feb 2022",
         points: [
-            "Developed methodologies to minimise experimental discrepancies to a 1% error margin. ",
-            "Leveraged tools such as LibreCAD, Arduino, and Excel to enhance data analysis efficiency and accuracy. ",
-            "Authored a paper, presenting research findings to panel and attendees at the Youth Science Conference. ",
+            "Engineered an embedded systems solution (Arduino, C++) to minimise experimental error in kinetic studies to ±1% precision",
+            "Authored and presented a research paper at the 28th Youth Science Conference.",
         ],
     },
 
@@ -526,12 +331,7 @@ const profiles = [
         name: "Email",
         link: "mailto:contact@kairostay.com",
         icon: "https://img.icons8.com/ios-filled/FFFFFF/message-squared.png",
-    },
-    // {
-    //     name: "Telegram",
-    //     link: "https://t.me/kairostay",
-    //     icon: "https://img.icons8.com/ios-filled/250/FFFFFF/telegram.png",
-    // },
+    }
 ];
 
 export {
@@ -539,6 +339,5 @@ export {
     technologies,
     experiences,
     awards,
-    achievements,
     profiles,
 };
