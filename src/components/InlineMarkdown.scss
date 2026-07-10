@@ -1,0 +1,26 @@
+.md-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(74, 222, 128, 0.35);
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.md-mark {
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+.md-code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 6px;
+}

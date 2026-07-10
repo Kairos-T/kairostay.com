@@ -1,25 +1,22 @@
-@import "../global.scss";
-
 .portfoliolist {
+  font-family: var(--mono);
   font-size: 14px;
-  margin: 0px 23px;
-  padding: 7px;
-  font-weight: 700;
+  font-weight: 500;
+  padding: 8px 22px;
+  border: 1px solid var(--border);
   border-radius: 10px;
+  color: var(--text-muted);
   cursor: pointer;
-  overflow: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 
-  li {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @include mobile {
-    margin: auto;
+  &:hover {
+    color: var(--text-strong);
+    border-color: var(--border-strong);
   }
 
   &.active {
-    background-color: #398485;
-    color: white;
+    background-color: var(--accent-dim);
+    border-color: var(--accent-border);
+    color: var(--accent);
   }
 }

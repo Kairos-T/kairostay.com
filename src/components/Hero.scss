@@ -1,73 +1,145 @@
-@import "../global.scss";
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
-
-.ityped-cursor {
-  animation: blink 2s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.head1 {
-  top: 80px;
-
-  .head2 {
-    line-height: 95px;
-    @include mobile4 {
-      line-height: 70px;
-    }
-  }
-
-  .name {
-    font-family: "Kalam", cursive;
-    font-weight: 900;
-  }
-}
-
-.link1 {
-  line-height: 40px;
-  background: rgba(0, 0, 0, 0.3);
-  width: fit-content;
-  margin: auto;
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
-  gap: 0.8rem;
-  border-radius: 1.1rem;
+  overflow: hidden;
+  padding: 0 1.5rem;
 }
 
-.link1 a {
-  background: transparent;
-  padding: 0.9rem;
-  border-radius: 50%;
-  display: flex;
-  color: var(--color-light);
-  font-size: 2rem;
-}
+/* layered mountain scene */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
 
-.heroHeadText {
-  font-family: "Consolas", monospace !important;
-}
+  .sky {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 55% at 50% 92%, rgba(255, 255, 255, 0.06), transparent 70%),
+    linear-gradient(180deg, #0b0d0d 0%, #101312 55%, #171b1a 100%);
+  }
 
-.icon {
-  font-size: 2.5rem;
-}
+  .ridge {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    display: block;
+    will-change: transform;
+  }
 
-@media screen and (max-width: 768px) {
-  .icon {
-    font-size: 2rem;
+  .ridge-far {
+    height: 46%;
+    opacity: 0.9;
+  }
+
+  .ridge-mid {
+    height: 40%;
+  }
+
+  .ridge-front {
+    height: 34%;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .icon {
-    font-size: 1.5rem;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: clamp(14px, 1.8vw, 18px);
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+
+  .hero-name {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 9vw, 6rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text-strong);
+  }
+
+  .hero-role {
+    margin-top: 6px;
+    font-family: var(--mono);
+    font-size: clamp(1rem, 2.6vw, 1.5rem);
+    color: #c2c8c5;
+    min-height: 1.6em;
+  }
+
+  .typed-cursor {
+    background: #c2c8c5;
+  }
+
+  .hero-socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 30px;
+  }
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: transform 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    color: var(--text-strong);
+    border-color: var(--border-strong);
+  }
+}
+
+.scroll-hint {
+  position: absolute;
+  z-index: 1;
+  bottom: 36px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 52px;
+  border: 2px solid var(--border-strong);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+
+  .chevron {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c2c8c5;
+    animation: scroll-bounce 1.6s ease-in-out infinite;
+  }
+}
+
+@keyframes scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(22px);
+    opacity: 0.2;
   }
 }

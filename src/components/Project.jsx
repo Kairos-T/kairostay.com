@@ -1,127 +1,82 @@
+import React, {useState} from "react";
 import Tilt from "react-parallax-tilt";
 import {motion} from "framer-motion";
-import React, {useEffect, useState} from "react";
-import {styles} from "../styles";
-import {demo} from "../assets";
+import {FiExternalLink} from "react-icons/fi";
 import {SectionWrapper} from "../hoc";
 import {eventProject, list, researchProject} from "../constants";
-import {fadeIn, textVariant} from "../utils/motion";
+import {fadeIn} from "../utils/motion";
+import SectionHeader from "./SectionHeader";
 import ProjectList from "./ProjectList";
 import "./Project.scss";
 
-const ProjectCard = ({
-                         index,
-                         name,
-                         description,
-                         tags,
-                         image,
-                         source_link,
-                     }) => {
+const projectsByCategory = {
+    event: eventProject,
+    research: researchProject,
+};
+
+const ProjectCard = ({index, name, description, tags, image, source_link}) => {
     return (
         <motion.div
-            whileInView={{opacity: 1, transform: "none"}}
-            variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+            variants={fadeIn("up", "spring", index * 0.15, 0.75)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{once: true, amount: 0.25}}
         >
             <Tilt
-                options={{
-                    max: 45,
-                    scale: 1,
-                    speed: 450,
-                }}
-                className="project-box bg-additional p-5 rounded-2xl sm:w-[330px] w-full"
+                tiltMaxAngleX={7}
+                tiltMaxAngleY={7}
+                glareEnable
+                glareMaxOpacity={0.08}
+                glareBorderRadius="16px"
+                className="project-card sm:w-[350px] w-full"
             >
-                <div className="Box1 relative w-full h-[180px]">
-                    <img
-                        src={image}
-                        alt="project_image"
-                        className="image w-full h-full object-cover rounded-2xl"
-                    />
-
-                    <div
-                        className="absolute inset-0 flex justify-center card-img_hover"
-                        style={{alignItems: "center"}}
-                    >
-                        <h3 className=" font-bold text-[16px]">{name}</h3>
+                <a
+                    href={source_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card-inner"
+                >
+                    <div className="thumb">
+                        <img src={image} alt={name}/>
+                        <span className="ext-icon" aria-hidden="true">
+                            <FiExternalLink/>
+                        </span>
                     </div>
 
-                    <div className="title absolute inset-0 flex justify-end card-img_hover">
-                        <div
-                            onClick={() => window.open(source_link, "_blank")}
-                            className="black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer"
-                        >
-                            <img
-                                src={demo}
-                                alt="source code"
-                                className="w-1/2 h-1/2 object-contain"
-                            />
+                    <div className="card-content">
+                        <h3 className="card-title">{name}</h3>
+                        <p className="card-desc">{description}</p>
+                        <div className="card-tags">
+                            {tags.map((tag) => (
+                                <span key={`${name}-${tag.name}`} className={`tag ${tag.color}`}>
+                                    ./{tag.name}
+                                </span>
+                            ))}
                         </div>
                     </div>
-                </div>
-
-                <div className="content mt-5">
-                    <p
-                        className="mt-2 text-secondary text-[14px]"
-                        style={{textAlign: "justify"}}
-                    >
-                        {description}
-                    </p>
-                </div>
-
-                <div className="content mt-4 flex flex-wrap gap-2">
-                    {tags.map((tag) => (
-                        <p
-                            key={`${name}-${tag.name}`}
-                            className={`text-[14px] ${tag.color}`}
-                        >
-                            ./{tag.name}
-                        </p>
-                    ))}
-                </div>
+                </a>
             </Tilt>
         </motion.div>
     );
 };
+
 const Project = () => {
     const [selected, setSelected] = useState("event");
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        switch (selected) {
-            case "event":
-                setData(eventProject);
-                break;
-            case "research":
-                setData(researchProject);
-                break;
-
-            default:
-                setData(eventProject);
-        }
-    }, [selected]);
+    const data = projectsByCategory[selected] ?? eventProject;
 
     return (
         <>
-            <motion.div
-                whileInView={{opacity: 1, transform: "none"}}
-                variants={textVariant()}
-            >
-                <p className={`${styles.sectionSubText} sectionHeadText text-center`}>
-                    root@kairos:~#
-                </p>
-                <h2 className={`${styles.sectionHeadText} sectionHeadText text-center`}>
-                    ./Highlights
-                </h2>
-            </motion.div>
+            <SectionHeader id="project" command="./highlights"/>
 
             <div className="project w-full flex">
-                <motion.p
-                    whileInView={{opacity: 1, transform: "none"}}
+                <motion.div
                     variants={fadeIn("", "", 0.1, 1)}
-                    className="mt-3 text-secondary text-[17px] leading-[30px]"
+                    className="mt-3 w-full"
                 >
-                    <ul>
+                    <ul className="tab-list">
                         {list.map((item) => (
                             <ProjectList
+                                key={item.id}
                                 title={item.title}
                                 active={selected === item.id}
                                 setSelected={setSelected}
@@ -130,18 +85,16 @@ const Project = () => {
                         ))}
                     </ul>
 
-                    <div className="box mt-20 flex flex-wrap justify-center">
+                    <div className="box mt-16 flex flex-wrap justify-center">
                         {data.map((project, index) => (
-                            <div>
-                                <ProjectCard
-                                    key={`project-${index}`}
-                                    index={index}
-                                    {...project}
-                                />
-                            </div>
+                            <ProjectCard
+                                key={project.name}
+                                index={index}
+                                {...project}
+                            />
                         ))}
                     </div>
-                </motion.p>
+                </motion.div>
             </div>
         </>
     );

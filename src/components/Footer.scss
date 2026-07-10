@@ -1,22 +1,42 @@
-@import "../global.scss";
-
 .footer {
-  position: relative;
-  bottom: 2rem;
-  padding-bottom: 4rem;
+  padding: 2.5rem 1rem 3rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--text-muted);
 
-  @include mobile {
+  @media (max-width: 480px) {
     font-size: 12px;
   }
 
-  p {
-    a, h1 {
-      text-decoration: none;
-      color: #52f165;
+  p a {
+    text-decoration: none;
+    color: var(--accent);
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 
-  .visitcounter {
+  .heart {
     display: inline;
+    color: #f54545;
+    animation: heartbeat 0.8s infinite;
+  }
+
+  .footer-year {
+    margin-top: 4px;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
   }
 }

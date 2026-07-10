@@ -1,0 +1,28 @@
+.experience-card {
+  .vertical-timeline-element-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    color: var(--text-strong);
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: var(--border-strong);
+    }
+  }
+
+  .company {
+    color: var(--accent);
+  }
+
+  .vertical-timeline-element-date {
+    font-family: var(--mono);
+    color: var(--text-muted);
+    opacity: 1 !important;
+  }
+
+  .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px var(--border-strong), 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+}

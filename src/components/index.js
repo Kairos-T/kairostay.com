@@ -1,24 +1,24 @@
-import {BallCanvas, ComputersCanvas, EarthCanvas, StarsCanvas} from './canvas';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import Tech from './Tech';
-import Experience from './Experience';
-import Project from './Project';
-import Profile from './Contact.jsx';
-import Achievement from './Achievement';
-import Footer from './Footer'
+import {EarthCanvas, StarsCanvas} from "./canvas";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import SectionHeader from "./SectionHeader";
+import Experience from "./Experience";
+import Project from "./Project";
+import Cve from "./Cve";
+import Contact from "./Contact";
+import Achievement from "./Achievement";
+import Footer from "./Footer";
 
 export {
     Hero,
     Navbar,
-    Tech,
+    SectionHeader,
     Experience,
     Project,
-    EarthCanvas,
-    BallCanvas,
-    ComputersCanvas,
-    StarsCanvas,
-    Profile,
-    Footer,
+    Cve,
+    Contact,
     Achievement,
-}
+    Footer,
+    EarthCanvas,
+    StarsCanvas,
+};

@@ -1,36 +1,25 @@
 {
-  "name": "react-portfolio",
-  "homepage": "https://shinchancode.github.io/3d-react-portfolio",
+  "name": "kairostay.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "engines": {
     "node": "22.x"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-three/drei": "^9.88.13",
     "@react-three/fiber": "^8.15.10",
     "framer-motion": "^10.16.4",
-    "gh-pages": "^5.0.0",
-    "ityped": "^1.0.3",
     "maath": "^0.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-parallax-tilt": "^1.7.120",
-    "react-router-dom": "^6.18.0",
-    "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.150.1"
   },

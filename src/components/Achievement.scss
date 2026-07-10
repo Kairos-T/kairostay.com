@@ -1,8 +1,18 @@
-.Box {
-  background-color: #26292b !important;
-}
+.achievements-terminal {
+  .output-list {
+    list-style: none;
+    margin: 4px 0 0;
+    padding: 0;
 
-.Box2 {
-  --tw-bg-opacity: 1;
-  background-color: #343a42;
+    li {
+      font-size: 14.5px;
+      line-height: 2;
+      color: var(--text-strong);
+
+      &::before {
+        content: "❯ ";
+        color: var(--accent);
+      }
+    }
+  }
 }

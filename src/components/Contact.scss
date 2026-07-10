@@ -1,43 +1,34 @@
-.my-skills {
-  margin-top: 30px;
+.contact-links {
+  margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 16px;
 
-  .skill {
-    margin: 0px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .contact-chip {
+    display: inline-flex;
     align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--text-strong);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
 
-    .icon-container {
-      width: 70px;
-      height: 70px;
-      margin-bottom: 2rem;
-      display: flex;
-      transition: all 1s ease;
+    img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
 
-      a {
-        overflow: hidden;
-
-        img {
-          width: 50px;
-          height: 50px;
-        }
-      }
-
-      img {
-        width: 70px;
-        height: 70px;
-      }
-
-      &:hover {
-        transform: scale(1.1);
-      }
-
+    &:hover {
+      transform: translateY(-3px);
+      color: var(--text-strong);
+      border-color: var(--border-strong);
     }
   }
 }

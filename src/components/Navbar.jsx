@@ -1,244 +1,142 @@
 import React, {useEffect, useState} from "react";
 import {styles} from "../styles";
+import {navLinks} from "../constants";
 import "./Navbar.scss";
+
+const NavLink = ({id, title, active, onClick}) => (
+    <a
+        href={`#${id}`}
+        className={`nav-link text-[15px] font-medium ${active === id ? "active" : ""}`}
+        onClick={(e) => {
+            e.preventDefault();
+            onClick(id);
+        }}
+    >
+        {title}
+    </a>
+);
 
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [scrolled, setScrolled] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            if (scrollTop > 100) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
+        const handleScroll = () => setScrolled(window.scrollY > 100);
         window.addEventListener("scroll", handleScroll);
-        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-        // Initial check for mobile view
-        handleResize();
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("resize", handleResize);
-        };
+    // highlight the section currently in view
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) setActive(entry.target.id);
+                });
+            },
+            {rootMargin: "-35% 0px -60% 0px"}
+        );
+        ["experience", "project", "contact"].forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+        return () => observer.disconnect();
     }, []);
 
     const scrollToSection = (sectionId) => {
         setActive(sectionId);
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({behavior: "smooth"});
-        }
+        setMenuOpen(false);
+        document.getElementById(sectionId)?.scrollIntoView({behavior: "smooth"});
     };
 
-    const toggleMobileMenu = () => {
-        setMenuOpen(!menuOpen);
+    const scrollToTop = () => {
+        setActive("");
+        setMenuOpen(false);
+        window.scrollTo({top: 0, behavior: "smooth"});
     };
 
     return (
-        <>
-            {/* Mobile View */}
-            {isMobile && (
-                <div
-                    className={`${
-                        styles.paddingX
-                    } w-full flex items-center py-3 fixed top-0 z-20 ${
-                        scrolled ? "translucent" : "bg-transparent"
-                    }`}
+        <nav
+            className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 transition-colors duration-300 ${
+                scrolled || menuOpen ? "translucent" : "bg-transparent"
+            }`}
+        >
+            <div className="relative w-full max-w-7xl mx-auto lg:px-10 flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr]">
+                {/* Desktop: left links */}
+                <div className="hidden lg:flex items-center gap-6">
+                    {navLinks.map((link) => (
+                        <NavLink key={link.id} {...link} active={active} onClick={scrollToSection}/>
+                    ))}
+                </div>
+
+                {/* Brand */}
+                <a
+                    href="#"
+                    className="brand text-white text-[18px] font-bold lg:justify-self-center"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        scrollToTop();
+                    }}
                 >
+                    root@kairos:~
+                </a>
+
+                {/* Desktop: right links */}
+                <div className="hidden lg:flex items-center gap-6 lg:justify-self-end">
+                    <NavLink id="contact" title="./contact" active={active} onClick={scrollToSection}/>
                     <a
-                        href="#"
-                        className={`sm:block text-white text-[18px] font-bold cursor-pointer flex ${
-                            active === "project" ? "active" : ""
-                        }`}
-                        onClick={() => {
-                            scrollToSection("#");
-                        }}
+                        href="/files/resume/Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-link text-[15px] font-medium"
                     >
-                        root@kairos:~
+                        ./resume
                     </a>
-                    <div className="cursor-pointer ml-auto" onClick={toggleMobileMenu}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            className="h-6 w-6 text-white"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h16m-7 6h7"
-                            />
-                        </svg>
-                    </div>
-                    {menuOpen && (
-                        <div className="absolute top-16 right-0 translucent shadow-md">
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer p-2`}
-                            >
-                                <a
-                                    href="#experience"
-                                    className={`nav-link ns-blue ${
-                                        active === "experience" ? "active" : ""
-                                    }`}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        scrollToSection("experience");
-                                        toggleMobileMenu();
-                                    }}
-                                >
-                                    ./Experience
-                                </a>
-                            </div>
-
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer p-2`}
-                            >
-                                <a
-                                    href="#project"
-                                    className={`nav-link ${active === "project" ? "active" : ""}`}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        scrollToSection("project");
-                                        toggleMobileMenu();
-                                    }}
-                                >
-                                    ./Projects
-                                </a>
-                            </div>
-
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer p-2`}
-                            >
-                                <a
-                                    href="#contact"
-                                    className={` ${active === "contact" ? "active" : ""}`}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        scrollToSection("contact");
-                                        toggleMobileMenu();
-                                    }}
-                                >
-                                    ./Contact
-                                </a>
-                            </div>
-
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer p-2`}
-                            >
-                                <a
-                                    href="/files/resume/Resume.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    &gt; Resume
-                                </a>
-                            </div>
-                        </div>
-                    )}
                 </div>
-            )}
 
-            {/* Desktop View */}
-            {!isMobile && (
-                <div
-                    className={`${
-                        styles.paddingX
-                    } w-full flex items-center py-3 fixed top-0 z-20 ${
-                        scrolled ? "translucent" : "bg-transparent"
-                    }`}
+                {/* Mobile menu button */}
+                <button
+                    type="button"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={menuOpen}
+                    className="lg:hidden ml-auto text-white"
+                    onClick={() => setMenuOpen(!menuOpen)}
                 >
-                    <div className="w-full flex justify-between px-16 items-center max-w-7xl mx-auto">
-                        <div className="flex items-center gap-5">
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer text-decoration-none`}
-                            >
-                                <a
-                                    href="#experience"
-                                    className={`nav-link ns-blue ${
-                                        active === "experience" ? "active" : ""
-                                    }`}
-                                    onClick={() => {
-                                        scrollToSection("experience");
-                                    }}
-                                >
-                                    ./Experience
-                                </a>
-                            </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        className="h-6 w-6"
+                    >
+                        {menuOpen ? (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                        ) : (
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        )}
+                    </svg>
+                </button>
 
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer text-decoration-none`}
-                            >
-                                <a
-                                    href="#project"
-                                    className={`nav-link ${active === "project" ? "active" : ""}`}
-                                    onClick={() => {
-                                        scrollToSection("project");
-                                    }}
-                                >
-                                    ./Projects
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-2">
-                            <a
-                                href="#"
-                                className={`sm:block text-white text-[18px] font-bold cursor-pointer flex ${
-                                    active === "project" ? "active" : ""
-                                }`}
-                                onClick={() => {
-                                    scrollToSection("#");
-                                }}
-                            >
-                                root@kairos:~
-                            </a>
-                        </div>
-
-                        <div className="sm:flex gap-5">
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer text-decoration-none`}
-                            >
-                                <a
-                                    href="#contact"
-                                    className={` ${active === "contact" ? "active" : ""}`}
-                                    onClick={() => {
-                                        scrollToSection("contact");
-                                    }}
-                                >
-                                    ./Contact
-                                </a>
-                            </div>
-
-                            <div
-                                className={`top2 ${"text-secondary"} hover:text-white text-[15px] font-medium cursor-pointer`}
-                            >
-                                <a
-                                    href="/files/resume/Resume.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    &gt; Resume
-                                </a>
-                            </div>
-                        </div>
+                {/* Mobile dropdown */}
+                {menuOpen && (
+                    <div className="lg:hidden absolute top-full right-0 mt-3 min-w-[190px] translucent shadow-md rounded-xl flex flex-col p-4 gap-3">
+                        {navLinks.map((link) => (
+                            <NavLink key={link.id} {...link} active={active} onClick={scrollToSection}/>
+                        ))}
+                        <NavLink id="contact" title="./contact" active={active} onClick={scrollToSection}/>
+                        <a
+                            href="/files/resume/Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="nav-link text-[15px] font-medium"
+                        >
+                            ./resume
+                        </a>
                     </div>
-                </div>
-            )}
-        </>
+                )}
+            </div>
+        </nav>
     );
 };
 

@@ -1,45 +1,43 @@
 import React from "react";
 import {motion} from "framer-motion";
 
-import {styles} from "../styles";
 import {SectionWrapper} from "../hoc";
-import {textVariant} from "../utils/motion";
+import {fadeIn} from "../utils/motion";
 import {awards} from "../constants";
+import SectionHeader from "./SectionHeader";
 import "./Achievement.scss";
 
 const Achievement = () => {
     return (
-        <div className={`mt-12 bg-additional rounded-[20px] relative`}>
-            <div className="absolute top-0 left-0 flex space-x-2 p-5">
-                <div className="h-4 w-4 bg-red-500 rounded-full"></div>
-                <div className="h-4 w-4 bg-yellow-500 rounded-full"></div>
-                <div className="h-4 w-4 bg-green-500 rounded-full"></div>
-            </div>
+        <>
+            <SectionHeader command="./awards"/>
 
-            <div className={`bg-tertiary rounded-2xl ${styles.padding}`}>
-                <motion.div variants={textVariant()}>
-                    <p className={`${styles.sectionSubText} sectionHeadText text-center`}>
-                        root@kairos:~#
+            <motion.div
+                variants={fadeIn("up", "tween", 0.2, 0.8)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{once: true, amount: 0.2}}
+                className="terminal-window achievements-terminal max-w-4xl mx-auto mt-16"
+            >
+                <div className="terminal-bar">
+                    <span className="dot red"></span>
+                    <span className="dot yellow"></span>
+                    <span className="dot green"></span>
+                    <span className="terminal-title">kairos@sec: ~/awards</span>
+                </div>
+
+                <div className="terminal-body">
+                    <p className="line">
+                        <span className="prompt">$</span> ls awards/
                     </p>
-                    <h2
-                        className={`${styles.sectionHeadText} sectionHeadText text-center`}
-                    >
-                        ls Awards/ 
-                    </h2>
-                </motion.div>
-            </div>
-
-            <div className={`justify-center p-5 ${styles.paddingX} gap7`}>
-                <div className={`${styles.sectionSubText} text-center`}>Awards:</div>
-                <ul className="mt-5 list-disc ml-5 space-y-2">
-                    {awards.map((award, index) => (
-                        <div key={index} className="text-white-100 text-[15px] pl-1  text-center">
-                            {award.title}
-                        </div>
-                    ))}
-                </ul>
-            </div>
-        </div>
+                    <ul className="output-list">
+                        {awards.map((award) => (
+                            <li key={award.title}>{award.title}</li>
+                        ))}
+                    </ul>
+                </div>
+            </motion.div>
+        </>
     );
 };
 

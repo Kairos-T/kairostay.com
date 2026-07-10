@@ -1,26 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
-  mode: "jit",
   theme: {
     extend: {
       colors: {
-        primary: "#121212",
-        secondary: "#52F165",
-        tertiary: "#282828",
-        additional: "#3f3f3f",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
+        primary: "#0b0e0d",
+        secondary: "#4ade80",
+        tertiary: "#121615",
+        additional: "#161b19",
+        "white-100": "#e8eae9",
+        muted: "#9ba39f",
       },
-      boxShadow: {
-        card: "0px 35px 120px -15px #343a40",
+      fontFamily: {
+        mono: ['"JetBrains Mono"', "Consolas", "monospace"],
+        sans: ["Inter", "sans-serif"],
       },
       screens: {
         xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
   },

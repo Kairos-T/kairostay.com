@@ -1,24 +1,19 @@
 import React from "react";
-import {VerticalTimeline, VerticalTimelineElement,} from "react-vertical-timeline-component";
-import {motion} from "framer-motion";
+import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import {styles} from "../styles";
 import {experiences} from "../constants";
 import {SectionWrapper} from "../hoc";
-import {textVariant} from "../utils/motion";
-
+import SectionHeader from "./SectionHeader";
+import InlineMarkdown from "./InlineMarkdown";
 import "./Experience.scss";
 
 const ExperienceCard = ({experience}) => {
     return (
         <VerticalTimelineElement
-            contentStyle={{
-                background: "#343a40",
-                color: "#fff",
-            }}
-            contentArrowStyle={{borderRight: "7px solid  #343a40"}}
+            className="experience-card"
+            contentArrowStyle={{borderRight: "7px solid rgba(255, 255, 255, 0.12)"}}
             date={experience.date}
             iconStyle={{background: experience.iconBg}}
             icon={
@@ -32,13 +27,9 @@ const ExperienceCard = ({experience}) => {
             }
         >
             <div>
-                <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-                <p
-                    className="text-secondary text-[16px] font-semibold"
-                    style={{margin: 0}}
-                >
+                <h3 className="text-white-100 text-[22px] font-bold">{experience.title}</h3>
+                <p className="company text-[15px] font-semibold" style={{margin: 0}}>
                     {experience.company_name}
-                    <br></br>
                 </p>
             </div>
 
@@ -46,9 +37,9 @@ const ExperienceCard = ({experience}) => {
                 {experience.points.map((point, index) => (
                     <li
                         key={`experience-point-${index}`}
-                        className="text-white-100 text-[14px] pl-1 tracking-wider"
+                        className="text-white-100 text-[14px] pl-1 tracking-wide"
                     >
-                        {point}
+                        <InlineMarkdown text={point}/>
                     </li>
                 ))}
             </ul>
@@ -59,17 +50,10 @@ const ExperienceCard = ({experience}) => {
 const Experience = () => {
     return (
         <>
-            <motion.div id="experience" variants={textVariant()}>
-                <p className={`${styles.sectionSubText} sectionHeadText text-center`}>
-                    root@kairos:~#
-                </p>
-                <h2 className={`${styles.sectionHeadText} sectionHeadText text-center`}>
-                    ./Education && ./Experience
-                </h2>
-            </motion.div>
+            <SectionHeader id="experience" command="./experience"/>
 
             <div className="mt-20 flex flex-col">
-                <VerticalTimeline>
+                <VerticalTimeline lineColor="rgba(255, 255, 255, 0.1)">
                     {experiences.map((experience, index) => (
                         <ExperienceCard
                             key={`experience-${index}`}
